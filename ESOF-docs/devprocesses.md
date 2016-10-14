@@ -30,7 +30,7 @@ Este jogo foi desenvolvido ao longo de 2 anos por 4 estudantes de uma escolar se
 Inferimos com base na natureza deste tipo de iniciativas e dos commits realizados no Github do projecto que não houve qualquer uso de algum tipo de estratégia para o desenvolvimento da aplicação. Esta foi feita maioritariamente durantes os primeiros meses desde a sua conceção, com ocasionais mas notavelmente inferiores picos de actividade durante os próximos dois anos.
 Chegámos à conclusão que este processo terá sido o utilizado depois de analisar o histórico de commits e ferramentas utilizadas (tabelas Trello), que permitem que várias tarefas que devem ser realizadas sejam implementadas por um dos contribuidores.
 
-![Commits do Hextris](/resources/Commits.png)
+![Commits do Hextris](https://raw.githubusercontent.com/Spininador/hextris/esof_hextris/ESOF-docs/resources/Commits.PNG)
 
 De seguida, contactá-mos o principal responsável pelo projecto, perguntando-lhe quais as estratégias de desenvolvimento e tipo de software usados. Foi-nos então confirmado que o projecto foi realizado sem ter em conta qualquer tipo de estratégia a longo prazo, confirmando-se assim as nossas assumpções. Para a organização do projecto foram usados o Github e o Trello, um website que funciona como um método simples e flexível de gerir qualquer tipo de projecto, através de uma interface tipo tabuleiro.
 
