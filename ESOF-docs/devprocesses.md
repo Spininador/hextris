@@ -8,10 +8,10 @@
 
 O Hextris é um jogo de puzzle acessível, criado nas linguagens Javascript e HTML5 Canvas. Toma como inspiração o jogo clássico de arcada _Tetris_ e outro, _QbQbQb_. Pode ser jogado em browser, no computador, ou ainda em versão móvel, num smartphone ou tablet (IOS ou Android).
 
-O objetivo do jogo é similar ao do Tetris: evitar que os blocos coloridos atinjam a zona crítica, delimitada por um hexágono cinzento. 
+O objetivo do jogo é similar ao do Tetris: evitar que os blocos coloridos atinjam a zona crítica, delimitada por um hexágono cinzento.
 No hexágono central, a azul, é mostrada a pontuação atual do jogador.
 
-À medida que o jogo progride, blocos coloridos caem da zona exterior aos hexágonos, para dentro da área de jogo. Ao chegarem ao hexágono central ou a qualquer outro bloco em cima deste, o bloco é empilhado nesse lado do hexágono e cola-se a este, girando com ele. 
+À medida que o jogo progride, blocos coloridos caem da zona exterior aos hexágonos, para dentro da área de jogo. Ao chegarem ao hexágono central ou a qualquer outro bloco em cima deste, o bloco é empilhado nesse lado do hexágono e cola-se a este, girando com ele.
 A pilha vai aumentando sempre que lhe é adicionada uma peça, até chegar à altura limite.
 A velocidade com que os blocos caem não é constante, e não cai sempre apenas um bloco ao mesmo tempo.
 
@@ -26,10 +26,16 @@ Embora um dos contribuidores do projeto tenha afirmado que nenhum processo de de
 
 "Iterative and incremental development" é uma estratégia de planeamento em que várias partes do software são desenvolvidas em paralelo, e integradas quando completas.
 
-Chegámos à conclusão que este processo terá sido o utilizado depois de analisar o histórico de commits e ferramentas utilizadas(tabelas Trello), que permitem que várias tarefas que devem ser realizadas sejam implementadas por um dos contribuidores.
+Este jogo foi desenvolvido ao longo de 2 anos por 4 estudantes de uma escolar secundária, com idades que variam dos 15 anos aos 17 anos. A fase inicial do projeto foi criada no âmbito de um evento Hackathon e data de 11 de Maio de 2014. Esta iniciativa serve como uma congregação de programadores, designers e outros tipos de profisisonais ligados às áreas de desenvolvimento de software e informática que tem como objectivo a criação de uma aplicação/software totalmente usável, para fins recriacionais.
+Inferimos com base na natureza deste tipo de iniciativas e dos commits realizados no Github do projecto que não houve qualquer uso de algum tipo de estratégia para o desenvolvimento da aplicação. Esta foi feita maioritariamente durantes os primeiros meses desde a sua conceção, com ocasionais mas notavelmente inferiores picos de actividade durante os próximos dois anos.
+Chegámos à conclusão que este processo terá sido o utilizado depois de analisar o histórico de commits e ferramentas utilizadas (tabelas Trello), que permitem que várias tarefas que devem ser realizadas sejam implementadas por um dos contribuidores.
+
+![Commits do Hextris](/resources/Commits.png)
+
+De seguida, contactá-mos o principal responsável pelo projecto, perguntando-lhe quais as estratégias de desenvolvimento e tipo de software usados. Foi-nos então confirmado que o projecto foi realizado sem ter em conta qualquer tipo de estratégia a longo prazo, confirmando-se assim as nossas assumpções. Para a organização do projecto foram usados o Github e o Trello, um website que funciona como um método simples e flexível de gerir qualquer tipo de projecto, através de uma interface tipo tabuleiro.
 
 
-### Hextris foi criado por:
+## Hextris foi criado por:
 * [Logan Engstrom](http://loganengstrom.com/)
 * [Garret Finucane](http://garrettdreyfus.github.io/)
 
