@@ -19,7 +19,15 @@ Colocar três ou mais blocos da mesma cor numa situação de adjacência elimina
 
 O jogador controla o hexágono central com as setas do teclado, na versão de browser. Na versão móvel, controla tocando nos lados esquerdo ou direito do ecrã, e pode ainda tocar no hexágono central para aumentar ou diminuir a velocidade de jogo.
 
-Hextris foi criado por:
+## Software development process
+
+Um processo de desenvolvimento de software é uma separação de desenvolvimento de software em fase distintas contendo atividades com a função de tornar mais facil o planeamento e gestão do projeto.
+Embora um dos contribuidores do projeto tenha afirmado que nenhum processo de desenvolvimento tenha sido usado, chegamos a conclusão que um processo que poderá ter sido utilizado é "Iterative and incremental development".
+"Iterative and incremental development" é uma estratégia de planejamento estagiado em que várias partes do sistema são desenvolvidas em paralelo, e integradas quando completas.
+Chegámos a esta conclusão depois de analisar o histórico de commits e ferramentas utilizadas(tabelas Trello), que permitem que várias tarefas que devem ser realizadas sejam postadas e implementadas por um dos contribuidores.
+
+
+## Hextris foi criado por:
 * [Logan Engstrom](http://loganengstrom.com/)
 * [Garret Finucane](http://garrettdreyfus.github.io/)
 
