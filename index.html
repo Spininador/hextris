@@ -18,36 +18,35 @@
 		<link rel="icon" type="image/png" href="favicon.ico">
 		<link rel="stylesheet" type="text/css" href="style/style.css">
 		<link rel="stylesheet" href="style/fa/css/font-awesome.min.css">
-		<script type = 'text/javascript' src="vendor/hammer.min.js"></script>
-		<script type = 'text/javascript' src="vendor/jsonfn.min.js"></script>
-		<script type = 'text/javascript' src="vendor/keypress.min.js"></script>
-		<script type = 'text/javascript' src="vendor/jquery.js"></script>
-		<script type = 'text/javascript' src="js/save-state.js"></script>
-		<script type = 'text/javascript' src="js/view.js"></script>
-		<script type = 'text/javascript' src="js/wavegen.js"></script>
-		<script type = 'text/javascript' src="js/math.js"></script>
-		<script type = 'text/javascript' src="js/Block.js"></script>
-		<script type = 'text/javascript' src="js/Hex.js"></script>
-		<script type = 'text/javascript' src="js/Text.js"></script>
-		<script type = 'text/javascript' src="js/comboTimer.js"></script>
-		<script type = 'text/javascript' src="js/checking.js"></script>
-		<script type = 'text/javascript' src='js/update.js'></script>
-		<script type = 'text/javascript' src='js/render.js'></script>
-		<script type = 'text/javascript' src="js/input.js"></script>
-		<script type = 'text/javascript' src="js/main.js"></script>
-		<script type = 'text/javascript' src="js/initialization.js"></script>
+		<script type = 'text/javascript' src="vendor_prod_v3/hammer.min.js"></script>
+		<script type = 'text/javascript' src="vendor_prod_v3/jsonfn.min.js"></script>
+		<script type = 'text/javascript' src="vendor_prod_v3/keypress.min.js"></script>
+		<script type = 'text/javascript' src="vendor_prod_v3/jquery.js"></script>
+		<script type = 'text/javascript' src="js_prod_v3/save-state.js"></script>
+		<script type = 'text/javascript' src="js_prod_v3/view.js"></script>
+		<script type = 'text/javascript' src="js_prod_v3/wavegen.js"></script>
+		<script type = 'text/javascript' src="js_prod_v3/math.js"></script>
+		<script type = 'text/javascript' src="js_prod_v3/Block.js"></script>
+		<script type = 'text/javascript' src="js_prod_v3/Hex.js"></script>
+		<script type = 'text/javascript' src="js_prod_v3/Text.js"></script>
+		<script type = 'text/javascript' src="js_prod_v3/comboTimer.js"></script>
+		<script type = 'text/javascript' src="js_prod_v3/checking.js"></script>
+		<script type = 'text/javascript' src='js_prod_v3/update.js'></script>
+		<script type = 'text/javascript' src='js_prod_v3/render.js'></script>
+		<script type = 'text/javascript' src="js_prod_v3/input.js"></script>
+		<script type = 'text/javascript' src="js_prod_v3/main.js"></script>
+		<script type = 'text/javascript' src="js_prod_v3/initialization.js"></script>
 		<script type = 'text/javascript' charset = 'utf-8' src = 'cordova.js'></script>
 	</head>
 	<body>
-		<div id="fb-root"></div>
-		<script>(function(d, s, id) {
-			var js, fjs = d.getElementsByTagName(s)[0];
-			if (d.getElementById(id)) return;
-			js = d.createElement(s); js.id = id;
-			js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
-			fjs.parentNode.insertBefore(js, fjs);
-			}(document, 'script', 'facebook-jssdk'));
-		</script>
+                <div id="fb-root"></div>
+                <script>(function(d, s, id) {
+                  var js, fjs = d.getElementsByTagName(s)[0];
+                  if (d.getElementById(id)) return;
+                  js = d.createElement(s); js.id = id;
+                  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+                  fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));</script> 
 		<canvas id="canvas"></canvas>
 		<div id='devtools' style='z-index:3;display:none;position:absolute;left:50%;width:400px;height:400px;top:50%;margin-top:-200px;margin-left:-200px;'>
 			<h2 id = 'clickToExit' style = 'background-color:#fff;color:#000'>Click to exit</h2>
@@ -93,7 +92,7 @@
 		<div id = 'restartBtn'><div id = 'restartBtnInner'><i class="fa fa-refresh fa-2x"></i></div></div>
 		<div id="bottombar">
                         <div style="bottom:4px; padding-right:4px;" class="fb-like" data-href="http://hextris.github.io/hextris" data-width="20" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
-			<a onClick="tweetblock==true" href="https://twitter.com/intent/tweet?hashtags=hextris&original_referer=http%3A%2F%2F0.0.0.0%3A8080%2F&text=Play%20Hextris!%20-&tw_p=tweetbutton&url=http%3A%2F%2Fhextris.github.io%2F" class="twitter-share-button" data-url="http://hextris.github.io/" data-text="Play Hextris! -" data-hashtags="hextris">Tweet</a>
+			<a href="https://twitter.com/intent/tweet?hashtags=hextris&original_referer=http%3A%2F%2F0.0.0.0%3A8080%2F&text=Play%20Hextris!%20-&tw_p=tweetbutton&url=http%3A%2F%2Fhextris.github.io%2F" class="twitter-share-button" data-url="http://hextris.github.io/" data-text="Play Hextris! -" data-hashtags="hextris">Tweet</a>
 			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 			<iframe id = 'ghl' src="http://ghbtns.com/github-btn.html?user=Hextris&repo=Hextris&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="90" height="20" onload='showbottombar()'></iframe>
 		</div>
