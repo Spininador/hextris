@@ -23,7 +23,7 @@ O jogador controla o hexágono central com as setas do teclado, na versão de br
 
 Um processo de desenvolvimento de software é uma separação de desenvolvimento de software em fase distintas contendo atividades com a função de tornar mais facil o planeamento e gestão do projeto.
 Embora um dos contribuidores do projeto tenha afirmado que nenhum processo de desenvolvimento tenha sido usado, chegamos a conclusão que um processo que poderá ter sido utilizado é "Iterative and incremental development".
-"Iterative and incremental development" é uma estratégia de planejamento estagiado em que várias partes do sistema são desenvolvidas em paralelo, e integradas quando completas.
+"Iterative and incremental development" é uma estratégia de planeamento em que várias partes do software são desenvolvidas em paralelo, e integradas quando completas.
 Chegámos a esta conclusão depois de analisar o histórico de commits e ferramentas utilizadas(tabelas Trello), que permitem que várias tarefas que devem ser realizadas sejam postadas e implementadas por um dos contribuidores.
 
 
