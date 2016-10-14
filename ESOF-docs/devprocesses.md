@@ -1,18 +1,30 @@
+![Logo da FEUP](http://www.junifeup.pt/wp-content/uploads/2016/01/feup.png)
+
 # _Hextris_ - A fast paced HTML5 game inspired by Tetris!
 
-## Project Description
-Hextris is a fast-paced, easy to play browser game, that can also be played on mobile devices such as tablet and smartphone.
-The goal of the game, much like Tetris, is to not let the colored blocks reach the critical height, outlined by a gray hexagon.
-As the game goes on, the colored blocks start to fall from the outer edge of the hexagon. Upon reaching the darker hexagon or another piece (of any color) they stick to it, remaining there in a stack.
+![Logo do Hextris](https://raw.githubusercontent.com/Spininador/hextris/esof_hextris/favicon.ico)
 
-The player may chose to rotate the hexagon (and all the blocks attached to it) using the arrow keys, to manipulate where the next blocks will fall.
+## Descrição do Projeto
 
-Placing three or more blocks of the same color clears them from the game area, scoring points for the player, sliding down the blocks above them, and effectively continuing the game. Clearing series of blocks grants a combo, which increases multiplicatively the score you would normally get from doing this.
+	O Hextris é um jogo de puzzle acessível, criado nas linguagens Javascript e HTML5 Canvas. Toma como inspiração o jogo clássico de arcada _Tetris_ e outro, _QbQbQb_. Pode ser jogado em browser, no computador, ou ainda em versão móvel, num smartphone ou tablet (IOS ou Android).
 
-On the mobile versions of the game, you control the hexagon by tapping left or right on the screen. Additionally, tapping on the center of the darker hexagon toggles speeding up the game.
+	O objetivo do jogo é similar ao do Tetris: evitar que os blocos coloridos atinjam a zona crítica, delimitada por um hexágono cinzento. 
+No hexágono central, a azul, é mostrada a pontuação atual do jogador.
 
-Hextris was created using Javascript and HTML5 Canvas, and was inspired by the classic game of _Tetris_ and _QbQbQb_.
+	À medida que o jogo progride, blocos coloridos caem da zona exterior aos hexágonos, para dentro da área de jogo. Ao chegarem ao hexágono central ou a qualquer outro bloco em cima deste, o bloco é empilhado nesse lado do hexágono e cola-se a este, girando com ele. 
+	A pilha vai aumentando sempre que lhe é adicionada uma peça, até chegar à altura limite.
+	A velocidade com que os blocos caem não é constante, e não cai sempre apenas um bloco ao mesmo tempo.
 
-Created by:
+	Colocar três ou mais blocos da mesma cor numa situação de adjacência elimina-os da área de jogo e atribui pontuação ao jogador. Eliminar blocos começa um combo, que por sua vez aumenta pontuação que seria normalmente atribuida por eliminar blocos. O combo tem um tempo limitado, apresentado na barra que aparece na parte exterior do hexágono cinzento.
+
+	O jogador controla o hexágono central com as setas do teclado, na versão de browser. Na versão móvel, controla tocando nos lados esquerdo ou direito do ecrã, e pode ainda tocar no hexágono central para aumentar ou diminuir a velocidade de jogo.
+
+Hextris foi criado por:
 * [Logan Engstrom](http://loganengstrom.com/)
 * [Garret Finucane](http://garrettdreyfus.github.io/)
+
+### Relatório elaborado por:
+* Gonçalo Ribeiro, _
+* Nuno Corte-Real, 	up201405158@fe.up.pt
+* Nuno Martins, 	up201405079@fe.up.pt
+* Rui Soares,		up201404965@fe.up.pt
