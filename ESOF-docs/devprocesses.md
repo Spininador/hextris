@@ -26,7 +26,7 @@ Embora um dos contribuidores do projeto tenha afirmado que nenhum processo de de
 
 "Iterative and incremental development" é uma estratégia de planeamento em que várias partes do software são desenvolvidas em paralelo, e integradas quando completas.
 
-Chegámos à conclusão que este processo terá sido o utilizado depois de analisar o histórico de commits e ferramentas utilizadas(tabelas Trello), que permitem que várias tarefas que devem ser realizadas sejam postadas e implementadas por um dos contribuidores.
+Chegámos à conclusão que este processo terá sido o utilizado depois de analisar o histórico de commits e ferramentas utilizadas(tabelas Trello), que permitem que várias tarefas que devem ser realizadas sejam implementadas por um dos contribuidores.
 
 
 ### Hextris foi criado por:
