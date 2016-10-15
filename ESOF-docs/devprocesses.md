@@ -6,7 +6,7 @@
 
 ## Descrição do Projeto
 
-O Hextris é um jogo de puzzle acessível, criado nas linguagens Javascript e HTML5 Canvas. Toma como inspiração o jogo clássico de arcada _Tetris_ e outro, _QbQbQb_. Pode ser jogado em browser, no computador, ou ainda em versão móvel, num smartphone ou tablet (IOS ou Android).
+O Hextris é um simples e acessível jogo de puzzle, criado nas linguagens Javascript e HTML5 Canvas. Toma como inspiração os clássicos jogos arcade _Tetris_ e _QbQbQb_. Pode ser jogado em browser, no computador ou ainda em versão móvel, num smartphone ou num tablet (IOS ou Android).
 
 O objetivo do jogo é similar ao do Tetris: evitar que os blocos coloridos atinjam a zona crítica, delimitada por um hexágono cinzento.
 No hexágono central, a azul, é mostrada a pontuação atual do jogador.
@@ -17,23 +17,21 @@ A velocidade com que os blocos caem não é constante, e não cai sempre apenas 
 
 Colocar três ou mais blocos da mesma cor numa situação de adjacência elimina-os da área de jogo e atribui pontuação ao jogador. Eliminar blocos começa um combo, que por sua vez aumenta pontuação que seria normalmente atribuida por eliminar blocos. O combo tem um tempo limitado, apresentado na barra que aparece na parte exterior do hexágono cinzento.
 
-O jogador controla o hexágono central com as setas do teclado, na versão de browser. Na versão móvel, controla tocando nos lados esquerdo ou direito do ecrã, e pode ainda tocar no hexágono central para aumentar ou diminuir a velocidade de jogo.
+O jogador controla o hexágono central com as setas do teclado, na versão de browser. Na versão móvel, controla-o tocando nos lados esquerdo ou direito do ecrã, e pode ainda tocar no hexágono central para aumentar ou diminuir a velocidade de jogo.
 
 ## Software development process
 
-Um processo de desenvolvimento de software é uma separação de desenvolvimento de software em fase distintas contendo atividades com a função de tornar mais facil o planeamento e gestão do projeto.
-Embora um dos contribuidores do projeto tenha afirmado que nenhum processo de desenvolvimento tenha sido usado, chegamos a conclusão que um processo que poderá ter sido utilizado é "Iterative and incremental development".
-
-"Iterative and incremental development" é uma estratégia de planeamento em que várias partes do software são desenvolvidas em paralelo, e integradas quando completas.
-
 Este jogo foi desenvolvido ao longo de 2 anos por 4 estudantes de uma escolar secundária, com idades que variam dos 15 anos aos 17 anos. A fase inicial do projeto foi criada no âmbito de um evento Hackathon e data de 11 de Maio de 2014. Esta iniciativa serve como uma congregação de programadores, designers e outros tipos de profisisonais ligados às áreas de desenvolvimento de software e informática que tem como objectivo a criação de uma aplicação/software totalmente usável, para fins recriacionais.
-Inferimos com base na natureza deste tipo de iniciativas e dos commits realizados no Github do projecto que não houve qualquer uso de algum tipo de estratégia para o desenvolvimento da aplicação. Esta foi feita maioritariamente durantes os primeiros meses desde a sua conceção, com ocasionais mas notavelmente inferiores picos de actividade durante os próximos dois anos.
-Chegámos à conclusão que este processo terá sido o utilizado depois de analisar o histórico de commits e ferramentas utilizadas (tabelas Trello), que permitem que várias tarefas que devem ser realizadas sejam implementadas por um dos contribuidores.
+
+Contactámos o contribuidor principal do projecto e foi-nos informado que ao longo do desenvolvimento do projecto não foi considerada nenhuma estratégia ou processo de desenvolvimento de software (uma separação de desenvolvimento em fases distintas, contendo atividades com a função de tornar mais fácil o planeamento e gestão do projecto em cause).
+
+No entanto, pela análise dos commits na página Github da aplicação, observamos que esta foi maioritariamente desenvolvida durantes os primeiros meses desde a sua conceção, com ocasionais mas notavelmente inferiores picos de atividade durante os próximos dois anos.
+
+Através destes fatos e tendo em conta a natureza dos eventos do tipo no qual a Hackathon se insere e as ferramentas usadas na organização do projecto (nomeadamente o website Trello, que funciona como um método simples e flexível de gerir qualquer tipo de projecto, através de uma interface semelhante a um tabuleiro, no qual várias tarefas a serem realizadas podem ser afixadas para que possam ser geridas e implementadas por vários contribuidores e o Github), chegámos á conclusão que foi usado o processo de desenvolvimento "Iterative and Incremental Development".
+
+"Iterative and Incremental Development" é uma estratégia de planeamento em que várias partes do software são desenvolvidas em paralelo, e integradas quando completas.
 
 ![Commits do Hextris](https://raw.githubusercontent.com/Spininador/hextris/esof_hextris/ESOF-docs/resources/Commits.PNG)
-
-De seguida, contactá-mos o principal responsável pelo projecto, perguntando-lhe quais as estratégias de desenvolvimento e tipo de software usados. Foi-nos então confirmado que o projecto foi realizado sem ter em conta qualquer tipo de estratégia a longo prazo, confirmando-se assim as nossas assumpções. Para a organização do projecto foram usados o Github e o Trello, um website que funciona como um método simples e flexível de gerir qualquer tipo de projecto, através de uma interface tipo tabuleiro.
-
 
 ## Hextris foi criado por:
 * [Logan Engstrom](http://loganengstrom.com/)
