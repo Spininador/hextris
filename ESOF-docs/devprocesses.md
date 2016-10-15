@@ -54,7 +54,7 @@ No entanto, como foi adotada a política open-source, qualquer utilizador pode p
 
 Todo o controlo de testes e correção de bugs é feito pela equipa principal do projeto, mas qualquer utilizador pode testar e modificar o código, e solidificá-lo contra potenciais bugs que tenha identificado.
 
-## 2.6. Análise Crítica
+## 3. Análise Crítica
 Visto que este projecto foi realizado no âmbito de uma competição, onde o tempo de concepção tem que ser encarado com um recurso limitado, consideramos adequado o emprego de um processo iterativo de desenvolvimento.
 
 Efectivamente, neste tipo de estratégia de planeamento, a estrutura do projecto tende a degradar à medida que novos incrementos vão sendo implementados, inferindo-se que é mais indicada para projectos de pequena dimensão, produzidos num curto espaço de tempo, tal como é o caso.
