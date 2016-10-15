@@ -39,6 +39,7 @@ O repositório tem vários *branches*, mas nenhum se encontra activo de momento,
 
 ## Análise Crítica
 Visto que este projecto foi realizado no âmbito de uma competição, onde o tempo de concepção tem que ser encarado com um recurso limitado, consideramos adequado o emprego de um processo iterativo de desenvolvimento.
+
 Efectivamente, neste tipo de estratégia de planeamento, a estrutura do projecto tende a degradar à medida que novos incrementos vão sendo implementados, inferindo-se que é mais indicada para projectos de pequena dimensão, produzidos num curto espaço de tempo, tal como é o caso.
 
 ## Hextris foi criado por:
