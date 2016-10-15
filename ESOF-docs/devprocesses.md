@@ -4,7 +4,7 @@
 
 ![Logo do Hextris](https://raw.githubusercontent.com/Spininador/hextris/esof_hextris/favicon.ico)
 
-## Descrição do Projeto
+## 1. Descrição do Projeto
 
 O Hextris é um simples e acessível jogo de puzzle, criado nas linguagens Javascript e HTML5 Canvas. Toma como inspiração os clássicos jogos arcade _Tetris_ e _QbQbQb_. Pode ser jogado em browser, no computador ou ainda em versão móvel, num smartphone ou num tablet (IOS ou Android).
 
@@ -19,35 +19,48 @@ Colocar três ou mais blocos da mesma cor numa situação de adjacência elimina
 
 O jogador controla o hexágono central com as setas do teclado, na versão de browser. Na versão móvel, controla-o tocando nos lados esquerdo ou direito do ecrã, e pode ainda tocar no hexágono central para aumentar ou diminuir a velocidade de jogo.
 
-## Desenvolvimento do Projecto
+## 2. Desenvolvimento do Projecto
 
-Este jogo foi desenvolvido ao longo de 2 anos por 4 estudantes de uma escolar secundária, com idades que variam dos 15 anos aos 17 anos. A fase inicial do projeto foi criada no âmbito de um evento Hackathon e data de 11 de Maio de 2014. Esta iniciativa serve como uma congregação de programadores, designers e outros tipos de profisisonais ligados às áreas de desenvolvimento de software e informática que tem como objectivo a criação de uma aplicação/software totalmente usável, para fins recriacionais.
+### 2.1. Objetivo e Contexto do Projeto
 
-### Processo de Software
-Contactámos o contribuidor principal do projecto e foi-nos informado que ao longo do desenvolvimento do projecto não foi considerada nenhuma estratégia ou processo de desenvolvimento de software (uma separação de desenvolvimento em fases distintas, contendo atividades com a função de tornar mais fácil o planeamento e gestão do projecto em cause).
+Este jogo foi desenvolvido ao longo de 2 anos por 4 estudantes de uma escola secundária, com idades que vão dos 15 anos aos 17 anos. A fase inicial do projeto foi criada no âmbito de um evento Hackathon e data de 11 de Maio de 2014. Esta iniciativa serve como uma congregação de programadores, designers e outros tipos de profissisonais ligados às áreas de desenvolvimento de software e informática e tem como objectivo a criação de uma aplicação/software totalmente usável, para fins recreacionais.
 
-No entanto, pela análise dos commits na página Github da aplicação, observamos que esta foi maioritariamente desenvolvida durantes os primeiros meses desde a sua conceção, com ocasionais mas notavelmente inferiores picos de atividade durante os próximos dois anos.
+### 2.2. Processo de Software
 
-Através destes fatos e tendo em conta a natureza dos eventos do tipo no qual a Hackathon se insere e as ferramentas usadas na organização do projecto (nomeadamente o website Trello, que funciona como um método simples e flexível de gerir qualquer tipo de projecto, através de uma interface semelhante a um tabuleiro, no qual várias tarefas a serem realizadas podem ser afixadas para que possam ser geridas e implementadas por vários contribuidores e o Github), chegámos á conclusão que foi usado o processo de desenvolvimento "Iterative and Incremental Development".
+Como sugerido para a primeira fase da nossa análise ao projeto, contactámos um dos contribuidores principais deste, a fim de sabermos se foi ou não considerado um processo de desenvolvimento em concreto para o planeamento (e eventual gestão) do projeto em causa. Foi-nos informado que não foi considerada nenhuma estratégia ou processo de desenvolvimento do software antecipadamente ou durante a sua elaboração.
 
-"Iterative and Incremental Development" é uma estratégia de planeamento em que várias partes do software são desenvolvidas em paralelo, e integradas quando completas.
+No entanto, pela análise dos commits na página Github da aplicação, observámos que esta foi maioritariamente desenvolvida durantes os primeiros meses desde a sua conceção, com ocasionais mas notavelmente inferiores picos de atividade durante os próximos dois anos.
 
 ![Commits do Hextris](https://raw.githubusercontent.com/Spininador/hextris/esof_hextris/ESOF-docs/resources/Commits.PNG)
 
-### Estrutura do Repositório
+Através destes factos e tendo em conta a natureza dos eventos do tipo no qual a Hackathon se insere e as ferramentas usadas na organização do projecto (nomeadamente o website Trello, que funciona como um método simples e flexível de gerir qualquer tipo de projecto, através de uma interface semelhante a um tabuleiro, no qual várias tarefas a serem realizadas podem ser afixadas para que possam ser geridas e implementadas por vários contribuidores e o Github), chegámos à conclusão que foi usado o processo de desenvolvimento "Iterative and Incremental Development".
+
+"Iterative and Incremental Development" é uma estratégia de planeamento em que várias partes do software são desenvolvidas em paralelo, e integradas quando completas.
+
+### 2.3. Estrutura do Repositório
 O repositório tem vários *branches*, mas nenhum se encontra activo de momento, com excepção do ["*gh-pages*"](https://github.com/Hextris/hextris/tree/gh-pages) (*default branch*) que hospeda o último *release* do jogo.
 
-## Análise Crítica
+### 2.2 Principais Contribuições e Política Open-source
+
+Como projeto desenvolvido por estudantes, estes são os principais contribuidores. São, nomeadamente:
+* [Logan Engstrom](https://github.com/lengstrom)
+* [Garret Finucane](https://github.com/garrettdreyfus)
+* [Noah Moroze](https://github.com/nmoroze)
+* [Michael Yang](https://github.com/themichaelyang)
+
+No entanto, como foi adotada a política open-source, qualquer utilizador pode propôr mudanças e melhorias. Isto garante que o projeto seja constantemente atualizado e testado, e torna fácil obter feedback constante da comunidade, seja em corrigir potenciais bugs, seja adicionar elementos ao jogo.
+
+### 2.3 Testing
+
+Todo o controlo de testes e correção de bugs é feito pela equipa principal do projeto, mas qualquer utilizador pode testar e modificar o código, e solidificá-lo contra potenciais bugs que tenha identificado.
+
+## 2.6. Análise Crítica
 Visto que este projecto foi realizado no âmbito de uma competição, onde o tempo de concepção tem que ser encarado com um recurso limitado, consideramos adequado o emprego de um processo iterativo de desenvolvimento.
 
 Efectivamente, neste tipo de estratégia de planeamento, a estrutura do projecto tende a degradar à medida que novos incrementos vão sendo implementados, inferindo-se que é mais indicada para projectos de pequena dimensão, produzidos num curto espaço de tempo, tal como é o caso.
 
-## Hextris foi criado por:
-* [Logan Engstrom](http://loganengstrom.com/)
-* [Garret Finucane](http://garrettdreyfus.github.io/)
-
 ### Relatório elaborado por:
-* Gonçalo Ribeiro,  goncalo.ribeiro@fe.up.pt
-* Nuno Corte-Real,  up201405158@fe.up.pt
-* Nuno Martins,     up201405079@fe.up.pt
-* Rui Soares,       up201404965@fe.up.pt
+* [Gonçalo Ribeiro](https://github.com/gribeirofeup),  goncalo.ribeiro@fe.up.pt
+* [Nuno Corte-Real](https://github.com/nunocr), 	up201405158@fe.up.pt
+* [Nuno Martins](https://github.com/Spininador), 	up201405079@fe.up.pt
+* [Rui Soares](https://github.com/RuiCS),		up201404965@fe.up.pt
