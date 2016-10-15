@@ -19,10 +19,11 @@ Colocar três ou mais blocos da mesma cor numa situação de adjacência elimina
 
 O jogador controla o hexágono central com as setas do teclado, na versão de browser. Na versão móvel, controla-o tocando nos lados esquerdo ou direito do ecrã, e pode ainda tocar no hexágono central para aumentar ou diminuir a velocidade de jogo.
 
-## Software development process
+## Desenvolvimento do Projecto
 
 Este jogo foi desenvolvido ao longo de 2 anos por 4 estudantes de uma escolar secundária, com idades que variam dos 15 anos aos 17 anos. A fase inicial do projeto foi criada no âmbito de um evento Hackathon e data de 11 de Maio de 2014. Esta iniciativa serve como uma congregação de programadores, designers e outros tipos de profisisonais ligados às áreas de desenvolvimento de software e informática que tem como objectivo a criação de uma aplicação/software totalmente usável, para fins recriacionais.
 
+### Processo de Software
 Contactámos o contribuidor principal do projecto e foi-nos informado que ao longo do desenvolvimento do projecto não foi considerada nenhuma estratégia ou processo de desenvolvimento de software (uma separação de desenvolvimento em fases distintas, contendo atividades com a função de tornar mais fácil o planeamento e gestão do projecto em cause).
 
 No entanto, pela análise dos commits na página Github da aplicação, observamos que esta foi maioritariamente desenvolvida durantes os primeiros meses desde a sua conceção, com ocasionais mas notavelmente inferiores picos de atividade durante os próximos dois anos.
@@ -33,12 +34,19 @@ Através destes fatos e tendo em conta a natureza dos eventos do tipo no qual a 
 
 ![Commits do Hextris](https://raw.githubusercontent.com/Spininador/hextris/esof_hextris/ESOF-docs/resources/Commits.PNG)
 
+### Estrutura do Repositório
+O repositório tem vários *branches*, mas nenhum se encontra activo de momento, com excepção do ["*gh-pages*"](https://github.com/Hextris/hextris/tree/gh-pages) (*default branch*) que hospeda o último *release* do jogo.
+
+## Análise Crítica
+Visto que este projecto foi realizado no âmbito de uma competição, onde o tempo de concepção tem que ser encarado com um recurso limitado, consideramos adequado o emprego de um processo iterativo de desenvolvimento.
+Efectivamente, neste tipo de estratégia de planeamento, a estrutura do projecto tende a degradar à medida que novos incrementos vão sendo implementados, inferindo-se que é mais indicada para projectos de pequena dimensão, produzidos num curto espaço de tempo, tal como é o caso.
+
 ## Hextris foi criado por:
 * [Logan Engstrom](http://loganengstrom.com/)
 * [Garret Finucane](http://garrettdreyfus.github.io/)
 
 ### Relatório elaborado por:
-* Gonçalo Ribeiro, _
-* Nuno Corte-Real, 	up201405158@fe.up.pt
-* Nuno Martins, 	up201405079@fe.up.pt
-* Rui Soares,		up201404965@fe.up.pt
+* Gonçalo Ribeiro,  goncalo.ribeiro@fe.up.pt
+* Nuno Corte-Real,  up201405158@fe.up.pt
+* Nuno Martins,     up201405079@fe.up.pt
+* Rui Soares,       up201404965@fe.up.pt
