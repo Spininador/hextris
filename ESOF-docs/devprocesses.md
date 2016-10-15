@@ -40,7 +40,7 @@ Através destes factos e tendo em conta a natureza dos eventos do tipo no qual a
 ### 2.3. Estrutura do Repositório
 O repositório tem vários *branches*, mas nenhum se encontra activo de momento, com excepção do ["*gh-pages*"](https://github.com/Hextris/hextris/tree/gh-pages) (*default branch*) que hospeda o último *release* do jogo.
 
-### 2.2 Principais Contribuições e Política Open-source
+### 2.4. Principais Contribuições e Política Open-source
 
 Como projeto desenvolvido por estudantes, estes são os principais contribuidores. São, nomeadamente:
 * [Logan Engstrom](https://github.com/lengstrom)
@@ -50,7 +50,7 @@ Como projeto desenvolvido por estudantes, estes são os principais contribuidore
 
 No entanto, como foi adotada a política open-source, qualquer utilizador pode propôr mudanças e melhorias. Isto garante que o projeto seja constantemente atualizado e testado, e torna fácil obter feedback constante da comunidade, seja em corrigir potenciais bugs, seja adicionar elementos ao jogo.
 
-### 2.3 Testing
+### 2.5. Testing
 
 Todo o controlo de testes e correção de bugs é feito pela equipa principal do projeto, mas qualquer utilizador pode testar e modificar o código, e solidificá-lo contra potenciais bugs que tenha identificado.
 
