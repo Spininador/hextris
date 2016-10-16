@@ -37,10 +37,7 @@ Através destes factos e tendo em conta a natureza dos eventos do tipo no qual a
 
 "Iterative and Incremental Development" é uma estratégia de planeamento em que várias partes do software são desenvolvidas em paralelo, e integradas quando completas.
 
-### 2.3. Estrutura do Repositório
-O repositório tem vários *branches*, mas nenhum se encontra activo de momento, com excepção do ["*gh-pages*"](https://github.com/Hextris/hextris/tree/gh-pages) (*default branch*) que hospeda o último *release* do jogo.
-
-### 2.4. Principais Contribuições e Política Open-source
+### 2.3. Principais Contribuições e Política Open-source
 
 Como projeto desenvolvido por estudantes, estes são os principais contribuidores. São, nomeadamente:
 * [Logan Engstrom](https://github.com/lengstrom)
@@ -50,7 +47,7 @@ Como projeto desenvolvido por estudantes, estes são os principais contribuidore
 
 No entanto, como foi adotada a política open-source, qualquer utilizador pode propôr mudanças e melhorias. Isto garante que o projeto seja constantemente atualizado e testado, e torna fácil obter feedback constante da comunidade, seja em corrigir potenciais bugs, seja adicionar elementos ao jogo.
 
-### 2.5. Testing
+### 2.4. Testing
 
 Todo o controlo de testes e correção de bugs é feito pela equipa principal do projeto, mas qualquer utilizador pode testar e modificar o código, e solidificá-lo contra potenciais bugs que tenha identificado.
 
@@ -61,6 +58,11 @@ Visto que este projecto foi realizado no âmbito de uma competição, onde o tem
 Efectivamente, neste tipo de estratégia de planeamento, a estrutura do projecto tende a degradar à medida que novos incrementos vão sendo implementados, inferindo-se que é mais indicada para projectos de pequena dimensão, produzidos num curto espaço de tempo, tal como é o caso.
 
 Para além do que já foi referido, este proceso de *software* permite obter um protótipo funcional nas etapas iniciais de desenvolvimento e minimizar o risco do aparecimento de obstáculos insperados ao nivel da implementação.
+
+### 3.2. Estrutura do Repositório
+O projecto tem vários *branches*, mas nenhum se encontra activo de momento, com excepção do [*gh-pages*](https://github.com/Hextris/hextris/tree/gh-pages) (*default branch*) que hospeda o último *release* do jogo.
+
+A estrutura do repositório segue o *Git Branching Model*, contendo dois *branches* principais paralelos, [*dev*](https://github.com/Hextris/hextris/tree/dev) e [*master*](https://github.com/Hextris/hextris/tree/master), e um conjunto de *supporting branches* onde cada colaborador implementa novos incrementos que vão sendo fundidos de volta ao *dev*.
 
 ### Relatório elaborado por:
 * [Gonçalo Ribeiro](https://github.com/gribeirofeup),  goncalo.ribeiro@fe.up.pt - 25%
