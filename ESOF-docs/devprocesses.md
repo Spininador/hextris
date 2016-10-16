@@ -1,6 +1,6 @@
 ![Logo da FEUP](http://www.junifeup.pt/wp-content/uploads/2016/01/feup.png)
 
-# _Hextris_ - A fast paced HTML5 game inspired by Tetris!
+# [_Hextris_](https://github.com/Hextris/hextris) - A fast paced HTML5 game inspired by Tetris!
 
 ![Logo do Hextris](https://raw.githubusercontent.com/Spininador/hextris/esof_hextris/favicon.ico)
 
@@ -18,6 +18,9 @@ A velocidade com que os blocos caem não é constante, e não cai sempre apenas 
 Colocar três ou mais blocos da mesma cor numa situação de adjacência elimina-os da área de jogo e atribui pontuação ao jogador. Eliminar blocos começa um combo, que por sua vez aumenta pontuação que seria normalmente atribuida por eliminar blocos. O combo tem um tempo limitado, apresentado na barra que aparece na parte exterior do hexágono cinzento.
 
 O jogador controla o hexágono central com as setas do teclado, na versão de browser. Na versão móvel, controla-o tocando nos lados esquerdo ou direito do ecrã, e pode ainda tocar no hexágono central para aumentar ou diminuir a velocidade de jogo.
+
+Hextris pode ser jogado em [hextris.io](http://hextris.io).
+O repositório do projeto encontra-se em: [https://github.com/Hextris/hextris](https://github.com/Hextris/hextris)
 
 ## 2. Desenvolvimento do Projecto
 
