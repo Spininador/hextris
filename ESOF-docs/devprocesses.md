@@ -6,10 +6,10 @@
 
 ## 1. Descrição do Projeto
 
-O Hextris é um simples e acessível jogo de puzzle, criado nas linguagens Javascript e HTML5 Canvas. Toma como inspiração os clássicos jogos arcade _Tetris_ e _QbQbQb_. Pode ser jogado em browser, no computador ou ainda em versão móvel, num smartphone ou num tablet (IOS ou Android).
+O Hextris é um simples e acessível jogo de puzzle, criado nas linguagens Javascript e HTML5(Canvas). Toma como inspiração os clássicos jogos arcade _Tetris_ e _QbQbQb_. Pode ser jogado em browser, no computador ou ainda em versão móvel, num smartphone ou num tablet (IOS ou Android).
 
 O objetivo do jogo é similar ao do Tetris: evitar que os blocos coloridos atinjam a zona crítica, delimitada por um hexágono cinzento.
-No hexágono central, a azul, é mostrada a pontuação atual do jogador.
+No hexágono central azul é mostrada a pontuação atual do jogador.
 
 À medida que o jogo progride, blocos coloridos caem da zona exterior aos hexágonos, para dentro da área de jogo. Ao chegarem ao hexágono central ou a qualquer outro bloco em cima deste, o bloco é empilhado nesse lado do hexágono e cola-se a este, girando com ele.
 A pilha vai aumentando sempre que lhe é adicionada uma peça, até chegar à altura limite.
