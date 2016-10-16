@@ -63,7 +63,7 @@ Efectivamente, neste tipo de estratégia de planeamento, a estrutura do projecto
 Para além do que já foi referido, este proceso de *software* permite obter um protótipo funcional nas etapas iniciais de desenvolvimento e minimizar o risco do aparecimento de obstáculos insperados ao nivel da implementação.
 
 ### Relatório elaborado por:
-* [Gonçalo Ribeiro](https://github.com/gribeirofeup),  goncalo.ribeiro@fe.up.pt
-* [Nuno Corte-Real](https://github.com/nunocr), 	up201405158@fe.up.pt
-* [Nuno Martins](https://github.com/Spininador), 	up201405079@fe.up.pt
-* [Rui Soares](https://github.com/RuiCS),		up201404965@fe.up.pt
+* [Gonçalo Ribeiro](https://github.com/gribeirofeup),  goncalo.ribeiro@fe.up.pt - 25%
+* [Nuno Corte-Real](https://github.com/nunocr), 	up201405158@fe.up.pt - 25%
+* [Nuno Martins](https://github.com/Spininador), 	up201405079@fe.up.pt - 25%
+* [Rui Soares](https://github.com/RuiCS),		up201404965@fe.up.pt - 25%
