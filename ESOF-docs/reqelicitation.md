@@ -10,7 +10,6 @@
 Este relatório visa a análise da Gestão de Requisitos empregue no desenvolvivmento do **hextris**.
 
 Neste contexto, entede-se por requisito de *software* como uma funcionalidade - desenvolvida ou adaptada - que necessita ser implementada para a resolução de um determinado problema que o *software* pretende solucionar.
-problem. 
 
 A Engenharia de Requisitos é um processo que engloba todas as actividades de definição, documentação e manutenção de requisitos.
 <!--Este processo é composto por quatro actividades:
