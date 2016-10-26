@@ -4,19 +4,19 @@
 
 ![Logo do Hextris](https://raw.githubusercontent.com/Spininador/hextris/esof_hextris/favicon.ico)
 
-# Requisitos de Software
+## 1. Requisitos de Software
 
-## 1. Introdução
+## 1.1. Introdução <1 valor>
 
-## 2. Âmbito
+## 1.2. Âmbito <1 valor>
 
-## 3. Descrição
+## 1.3. Descrição <1 valor>
 
-## 4. Especificação de Requisitos
+## 2. Especificação de Requisitos <5 valores>
 
-## 5. Casos de Uso
+## 3. Casos de Uso <6 valores>
 
-## 6. *Domain Model*
+## 4. *Domain Model* <6 valores>
 
 ### Relatório elaborado por:
 * [Gonçalo Ribeiro](https://github.com/gribeirofeup),  goncalo.ribeiro@fe.up.pt - 25%
