@@ -29,6 +29,29 @@ SuperTux's development purpose is to make a free game, available for anyone to p
 ### 1.3. Descrição <!-- 1 valor -->
 
 ## 2. Especificação de Requisitos <!-- 5 valores -->
+Como o tipo de projeto desenvolvido é um jogo, a maior parte dos requisitos considerados são pertinentes a todas as funcionalidades do jogo em si e da interação entre o utilizador (o único ator) e este. Para além destes, era indispensável considerar todos os requisitos que possibilitam o bom funcionamento e manutenção do jogo.
+
+### 2.1. Requisitos Funcionais
+É nesta parte que incide a maior parte das funcionalidades do jogo em si. Como tal, foi os requisitos funcionais (iniciais) foram os seguintes:
+* Tempo de jogo potencialmente infinito, limitado apenas pela capacidade do utilizador conseguir manter a área de jogo fora do limite;
+* Controlo do ambiente de jogo simples, usando setas de direção em teclado ou deslizes no ecrã num dispositivo móvel;
+* Cálculo de pontuação (local);
+* Recomeço de ronda rápido;
+* Navegação por menus (principal, pausa, sobre);
+* Reconhecimento fácil de todos os elementos da área de jogo;
+* Possibilidade de partilha de pontuação em diversas redes sociais;
+* Possibilidade de jogar em diferentes dispositivos: computador, _smartphone_, _tablet_.
+
+### 2.2. Requisitos Não-Funcionais
+Nesta parte dos requisitos são descritos todos os que contribuem para a qualidade total do produto final. São, nomeadamente:
+* Adoção de política _open source_;
+* Manutenção de uma página com toda a informação relevante sobre o _Hextris_;
+* Ser _free to play_;
+* Desenvolvido usando Javascript e HTML5.
+
+### 2.3. Elicitação de Novos Requisitos
+Através da implementação da política _open source_, qualquer utilizador pode submeter _issues_ e _pull requests_ no repositório do projeto. Aí, pode alertar os developers para a presença de bugs ou propor mudanças e melhorias ao jogo, sejam a nível de jogabilidade (por exemplo, propor mudança na alteração da velocidade do jogo), compatibilidade ou até acessibilidade (por exemplo, mudar as cores dos blocos para ajudar daltónicos).
+Se o utilizador que propõe uma mudança efetivamente a implementa, pode submeter um pull request que, após avaliação pelos developers, é _merged_ para o _branch_ principal do jogo, passando a ser efetivamente parte do jogo.
 
 ## 3. Casos de Uso <!-- 6 valores -->
 Para demonstrar a utilização do jogo e as suas fronteiras de navegação, foram realizados os seguintes Diagramas de Uso (User Case Diagrams). Estes diagramas permitem visualizar as possíveis ações que o utilizador pode efetuar, dentro do estado de jogo e no menu inicial.
@@ -41,7 +64,7 @@ No menu principal, o utilizador pode navegar para qualquer uma das seguintes ite
 
 No estado de jogo, o são disponibilizados aos utilizador as ações de rotação do hexágono (para a direita ou para a esquerda) e a de parar o jogo (símbolo "pause" no canto inferior direito).
 
-Após a temrinação do jogo, é incializado o estado de fim de jogo, onde  são apresentadas ao utilizador a opção Replay (inicializa um novo estado de jogo) ou Share My Score (dirige o utilizador para o Twitter, sugerindo-lhe um post no qual são apresentados a sua pontuação e um link para o jogo). O utilizador pode ainda, neste estado, partilhar o jogo no Facebook ou Twitter.
+Após a terminação do jogo, é incializado o estado de fim de jogo, onde  são apresentadas ao utilizador a opção Replay (inicializa um novo estado de jogo) ou Share My Score (dirige o utilizador para o Twitter, sugerindo-lhe um post no qual são apresentados a sua pontuação e um link para o jogo). O utilizador pode ainda, neste estado, partilhar o jogo no Facebook ou Twitter.
 
 ## 4. *Domain Model* <!-- 6 valores -->
 
