@@ -7,7 +7,7 @@
 ## 1. Requisitos de Software
 
 ### 1.1. Introdução <!-- 1 valor -->
-Este relatório visa a análise da Gestão de Requisitos empregue no desenvolvivmento do **hextris**.
+Este relatório visa a análise da Gestão de Requisitos empregue no desenvolvivmento do **Hextris**.
 
 Neste contexto, entede-se por requisito de *software* como uma funcionalidade - desenvolvida ou adaptada - que necessita ser implementada para a resolução de um determinado problema que o *software* pretende solucionar.
 
@@ -21,6 +21,7 @@ Este processo deve ser precedido de um estudos de viabilidade que, a partir das 
 -->
 
 ### 1.2. Âmbito <!-- 1 valor -->
+Hextris é um jogo cuja inspiração surge no contexto de uma competição de programação, e desenvolvida por um grupo de estudantes. Partindo deste contexto em que foi inicialmente concebido, é um projeto de âmbito de emulação da experiência clássica de jogos infinitos, centrados na defesa de uma área simples e que recompoensam o utilizador com pontos. Para além disso, o ritmo rápido e recomeço imediato de rondas do jogo permitem que seja também um jogo ideal para dispositivos móveis.
 <!--
 SuperTux's development purpose is to make a free game, available for anyone to play or even contribute towards. SuperTux is designed for players to be able to enjoy a "Super Mario styled" game with a new environment, where the graphics and gameplay are a refreshing reboot from the original Mario games. The objective was to accomplish this, all while having a humorous side to it, by using the Linux mascot and the universe it alludes to. Another important point of this game is that it's purpose is not only to be fun, but also to be extensive, as in not having a defined end. To serve this purpose, not only are we going to implement the story levels, but also extra levels and addons (using a map editor), made by the community, levels/addons which we plan to be downloadable in game.
 -->
