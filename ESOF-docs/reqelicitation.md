@@ -6,17 +6,17 @@
 
 ## 1. Requisitos de Software
 
-### 1.1. Introdução <1 valor>
+### 1.1. Introdução <!-- 1 valor -->
 
-### 1.2. Âmbito <1 valor>
+### 1.2. Âmbito <!-- 1 valor -->
 
-### 1.3. Descrição <1 valor>
+### 1.3. Descrição <!-- 1 valor -->
 
-## 2. Especificação de Requisitos <5 valores>
+## 2. Especificação de Requisitos <!-- 5 valores -->
 
-## 3. Casos de Uso <6 valores>
+## 3. Casos de Uso <!-- 6 valores -->
 
-## 4. *Domain Model* <6 valores>
+## 4. *Domain Model* <!-- 6 valores -->
 
 ### Relatório elaborado por:
 * [Gonçalo Ribeiro](https://github.com/gribeirofeup),  goncalo.ribeiro@fe.up.pt - 25%
