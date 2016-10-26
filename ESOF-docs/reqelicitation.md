@@ -2,15 +2,15 @@
 
 # [_Hextris_](https://github.com/Hextris/hextris) - A fast paced HTML5 game inspired by Tetris!
 
-# Requisitos de Software
-
 ![Logo do Hextris](https://raw.githubusercontent.com/Spininador/hextris/esof_hextris/favicon.ico)
 
-### 1. Introdução
+# Requisitos de Software
 
-### 2. Âmbito
+## 1. Introdução
 
-### 3. Descrição
+## 2. Âmbito
+
+## 3. Descrição
 
 ## 4. Especificação de Requisitos
 
