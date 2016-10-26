@@ -31,6 +31,17 @@ SuperTux's development purpose is to make a free game, available for anyone to p
 ## 2. Especificação de Requisitos <!-- 5 valores -->
 
 ## 3. Casos de Uso <!-- 6 valores -->
+Para demonstrar a utilização do jogo e as suas fronteiras de navegação, foram realizados os seguintes Diagramas de Uso (User Case Diagrams). Estes diagramas permitem visualizar as possíveis ações que o utilizador pode efetuar, dentro do estado de jogo e no menu inicial.
+
+![Diagrama de Uso do Menu Principal](https://raw.githubusercontent.com/Spininador/hextris/esof_hextris/ESOF-docs/resources/usercasemainmenu.PNG)
+
+No menu principal, o utilizador pode navegar para qualquer uma das seguintes iterações: Play (dá início ao jogo, entrando no estado de jogo), Help (permite visualizar um sucinto resumo que explica as regras do jogo e como jogá-lo, fornecendo ainda links para as páginas pessoais dos seus criadores, para o website do jogo e para as páginas iOS e Android do jogo), Facebook/Twitter (permite partilhar um link para o jogo nas redes sociais Facebook e/ou Twitter) e Get On Google Play/Download On The App Store (remete o utilizador para as já mencionadas páginas iOS e Android do jogo, onde é possível descarregá-lo de graça).
+
+![Diagrama de Uso do Estado de Jogo](https://raw.githubusercontent.com/Spininador/hextris/esof_hextris/ESOF-docs/resources/usercasediagramgame.PNG)
+
+No estado de jogo, o são disponibilizados aos utilizador as ações de rotação do hexágono (para a direita ou para a esquerda) e a de parar o jogo (símbolo "pause" no canto inferior direito).
+
+Após a temrinação do jogo, é incializado o estado de fim de jogo, onde  são apresentadas ao utilizador a opção Replay (inicializa um novo estado de jogo) ou Share My Score (dirige o utilizador para o Twitter, sugerindo-lhe um post no qual são apresentados a sua pontuação e um link para o jogo). O utilizador pode ainda, neste estado, partilhar o jogo no Facebook ou Twitter.
 
 ## 4. *Domain Model* <!-- 6 valores -->
 
