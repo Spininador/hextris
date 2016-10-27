@@ -74,8 +74,8 @@ Neste tipo de diagramas é possível observar a interação entre classes que re
 ![Domain Model do jogo](https://raw.githubusercontent.com/Spininador/hextris/esof_hextris/ESOF-docs/resources/domain-model-game.PNG)
 
 Neste *Domain Model* é possivel observar a interação entre os vários elementos do jogo.
-A única função que o User pode realizar é rodar a Hex(Hexagono no centro do jogo), e esta Hex tem 6 Sides(lados) onde vão cair blocos aleatóriamente.
-Cada bloco possuí uma certa cor, uma velocidade de queda e um angulo de queda(6 angulos do total, pois só há 6 Sides).O atributo Docked indica se o bloco já aterrou em cima de outro bloco ou no Hex.
+A única função que o User pode realizar é rodar a Hex(Hexagono no centro do jogo), e esta Hex tem 6 Sides(lados) onde vão cair blocos aleatoriamente.
+Cada bloco possui uma certa cor, uma velocidade de queda e um ângulo de queda(6 ângulos do total, pois só há 6 Sides).O atributo Docked indica se o bloco já aterrou em cima de outro bloco ou no Hex.
 Quando 3 ou mais blocos da mesma cor entram em contacto, é gerada uma combinação, cuja pontuação depende do número de blocos consumidos.A pontuação gerada pela combinação será adicionada a Score, que representa a pontuação total do jogador.
 
 
