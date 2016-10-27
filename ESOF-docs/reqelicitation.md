@@ -67,6 +67,17 @@ No estado de jogo, o são disponibilizados aos utilizador as ações de rotaçã
 Após a terminação do jogo, é incializado o estado de fim de jogo, onde  são apresentadas ao utilizador a opção Replay (inicializa um novo estado de jogo) ou Share My Score (dirige o utilizador para o Twitter, sugerindo-lhe um post no qual são apresentados a sua pontuação e um link para o jogo). O utilizador pode ainda, neste estado, partilhar o jogo no Facebook ou Twitter.
 
 ## 4. *Domain Model* <!-- 6 valores -->
+A utilização de um *Domain Model* é muito útil para compreender o funcionamento do jogo, assim como a interação entre este e o utilizador, de forma a facilitar o desenvolvimento do projeto.
+
+Neste tipo de diagramas é possível observar a interação entre classes que representam conceitos com significado no contexto do projeto, mas que não são classes de software necessariamente, proporcionando assim uma base à construção do produto de uma forma simples e compreensível.
+
+![Domain Model do jogo](https://raw.githubusercontent.com/Spininador/hextris/esof_hextris/ESOF-docs/resources/domain-model-game.PNG)
+
+Neste *Domain Model* é possivel observar a interação entre os vários elementos do jogo.
+A única função que o User pode realizar é rodar a Hex(Hexagono no centro do jogo), e esta Hex tem 6 Sides(lados) onde vão cair blocos aleatóriamente.
+Cada bloco possuí uma certa cor, uma velocidade de queda e um angulo de queda(6 angulos do total, pois só há 6 Sides).O atributo Docked indica se o bloco já aterrou em cima de outro bloco ou no Hex.
+Quando 3 ou mais blocos da mesma cor entram em contacto, é gerada uma combinação, cuja pontuação depende do número de blocos consumidos.A pontuação gerada pela combinação será adicionada a Score, que representa a pontuação total do jogador.
+
 
 ### Relatório elaborado por:
 * [Gonçalo Ribeiro](https://github.com/gribeirofeup),  goncalo.ribeiro@fe.up.pt - 25%
