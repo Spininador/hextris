@@ -6,29 +6,22 @@
 
 ## 1. Requisitos de Software
 
-### 1.1. Introdução <!-- 1 valor -->
+### 1.1. Introdução
 Este relatório visa a análise da Gestão de Requisitos empregue no desenvolvivmento do **Hextris**.
 
 Neste contexto, entede-se por requisito de *software* como uma funcionalidade - desenvolvida ou adaptada - que necessita ser implementada para a resolução de um determinado problema que o *software* pretende solucionar.
 
 A Engenharia de Requisitos é um processo que engloba todas as actividades de definição, documentação e manutenção de requisitos.
-<!--Este processo é composto por quatro actividades:
-* Identificação de Requisitos
-* Análise de Requisitos
-* Especificação de Requisitos
-* Validação de requisitos
-Este processo deve ser precedido de um estudos de viabilidade que, a partir das restrições do projecto, determinam se o mesmo é viável e se deve seguir para a identificação de requisitos. No *waterfall model*, a engenharia de requisitos é feita na primeira fase do processo de desenvolvimento. Outros métodos de desenvolvimento de software como o XP e Scrum assumem que a engenharia de requisitos continua ao longo do ciclo de vida do sofware.
--->
 
-### 1.2. Âmbito <!-- 1 valor -->
+### 1.2. Âmbito
 Hextris é um jogo cuja inspiração surge no contexto de uma competição de programação, e desenvolvida por um grupo de estudantes. Partindo deste contexto em que foi inicialmente concebido, é um projeto de âmbito de emulação da experiência clássica de jogos infinitos, centrados na defesa de uma área simples e que recompensam o utilizador com pontos. Para além disso, o ritmo rápido e recomeço imediato de rondas do jogo permitem que seja também um jogo ideal para dispositivos móveis.
-<!--
-SuperTux's development purpose is to make a free game, available for anyone to play or even contribute towards. SuperTux is designed for players to be able to enjoy a "Super Mario styled" game with a new environment, where the graphics and gameplay are a refreshing reboot from the original Mario games. The objective was to accomplish this, all while having a humorous side to it, by using the Linux mascot and the universe it alludes to. Another important point of this game is that it's purpose is not only to be fun, but also to be extensive, as in not having a defined end. To serve this purpose, not only are we going to implement the story levels, but also extra levels and addons (using a map editor), made by the community, levels/addons which we plan to be downloadable in game.
--->
 
-### 1.3. Descrição <!-- 1 valor -->
+### 1.3. Descrição
+A elicitação dos requisitos deste projecto foi, inicialmente, regida pelo formato competitivo de uma *hackaton*: o jogo tería de alcançar um estado funcional e apelativo num curto espaço de tempo. Como tal, a base deste jogo assenta na sua jogabilidade - interface e controlos responsivos e intuitivos que facilitam a iniciantes disfrutarem da experiência de jogo.
 
-## 2. Especificação de Requisitos <!-- 5 valores -->
+Posteriormente, devido à natureza *open source* do projecto, novas *features* e melhorias foram sendo adicionadas/sugeridas por terceiros, através de *issues* e de *pull requests* no GitHub.
+
+## 2. Especificação de Requisitos
 Como o tipo de projeto desenvolvido é um jogo, a maior parte dos requisitos considerados são pertinentes a todas as funcionalidades do jogo em si e da interação entre o utilizador (o único ator) e este. Para além destes, era indispensável considerar todos os requisitos que possibilitam o bom funcionamento e manutenção do jogo.
 
 ### 2.1. Requisitos Funcionais
@@ -53,7 +46,7 @@ Nesta parte dos requisitos são descritos todos os que contribuem para a qualida
 Através da implementação da política _open source_, qualquer utilizador pode submeter _issues_ e _pull requests_ no repositório do projeto. Aí, pode alertar os developers para a presença de bugs ou propor mudanças e melhorias ao jogo, sejam a nível de jogabilidade (por exemplo, propor mudança na alteração da velocidade do jogo), compatibilidade ou até acessibilidade (por exemplo, mudar as cores dos blocos para ajudar daltónicos).
 Se o utilizador que propõe uma mudança efetivamente a implementa, pode submeter um pull request que, após avaliação pelos developers, é _merged_ para o _branch_ principal do jogo, passando a ser efetivamente parte do jogo.
 
-## 3. Casos de Uso <!-- 6 valores -->
+## 3. Casos de Uso
 Para demonstrar a utilização do jogo e as suas fronteiras de navegação, foram realizados os seguintes Diagramas de Uso (User Case Diagrams). Estes diagramas permitem visualizar as possíveis ações que o utilizador pode efetuar, dentro do estado de jogo e no menu inicial.
 
 ![Diagrama de Uso do Menu Principal](https://raw.githubusercontent.com/Spininador/hextris/esof_hextris/ESOF-docs/resources/usercasemainmenu.PNG)
@@ -66,7 +59,7 @@ No estado de jogo, o são disponibilizados aos utilizador as ações de rotaçã
 
 Após a terminação do jogo, é incializado o estado de fim de jogo, onde  são apresentadas ao utilizador a opção Replay (inicializa um novo estado de jogo) ou Share My Score (dirige o utilizador para o Twitter, sugerindo-lhe um post no qual são apresentados a sua pontuação e um link para o jogo). O utilizador pode ainda, neste estado, partilhar o jogo no Facebook ou Twitter.
 
-## 4. *Domain Model* <!-- 6 valores -->
+## 4. *Domain Model*
 A utilização de um *Domain Model* é muito útil para compreender o funcionamento do jogo, assim como a interação entre este e o utilizador, de forma a facilitar o desenvolvimento do projeto.
 
 Neste tipo de diagramas é possível observar a interação entre classes que representam conceitos com significado no contexto do projeto, mas que não são classes de software necessariamente, proporcionando assim uma base à construção do produto de uma forma simples e compreensível.
