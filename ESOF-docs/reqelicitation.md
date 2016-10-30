@@ -17,7 +17,7 @@ A Engenharia de Requisitos é um processo que engloba todas as actividades de de
 Hextris é um jogo cuja inspiração surge no contexto de uma competição de programação, e desenvolvida por um grupo de estudantes. Partindo deste contexto em que foi inicialmente concebido, é um projeto de âmbito de emulação da experiência clássica de jogos infinitos, centrados na defesa de uma área simples e que recompensam o utilizador com pontos. Para além disso, o ritmo rápido e recomeço imediato de rondas do jogo permitem que seja também um jogo ideal para dispositivos móveis.
 
 ### 1.3. Descrição
-A elicitação dos requisitos deste projecto foi, inicialmente, regida pelo formato competitivo de uma *hackaton*: o jogo tería de alcançar um estado funcional e apelativo num curto espaço de tempo. Como tal, a base deste jogo assenta na sua jogabilidade - interface e controlos responsivos e intuitivos que facilitam a iniciantes disfrutarem da experiência de jogo.
+A elicitação dos requisitos deste projecto foi, inicialmente, regida pelo formato competitivo de uma *hackaton*: o jogo tería de alcançar um estado funcional e apelativo num curto espaço de tempo. Como tal, a base do _Hextris_ assenta na sua jogabilidade - interface e controlos responsivos e intuitivos que facilitam a iniciantes disfrutarem da experiência de jogo.
 
 Posteriormente, devido à natureza *open source* do projecto, novas *features* e melhorias foram sendo adicionadas/sugeridas por terceiros, através de *issues* e de *pull requests* no GitHub.
 
