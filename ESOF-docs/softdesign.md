@@ -7,7 +7,7 @@
 ## 1. Introdução e Arquitetura de Software
 ## 2. Visão 4+1
 ### 2.1. Visão Lógica (_Logical View_)
-### 2.2. Visão de Desenvolvimento (_Development View_)
+### 2.2. Visão de Implementação (_Implementation / Development View_)
 ### 2.3. Visão de Processo (_Process View_)
 ### 2.4. Visão Evolutiva (_Deployment View_)
 ### 2.5. Casos de Utilização (_Use Cases_)
