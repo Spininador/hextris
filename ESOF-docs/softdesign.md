@@ -5,11 +5,12 @@
 ![Logo do Hextris](https://raw.githubusercontent.com/Spininador/hextris/esof_hextris/favicon.ico)
 
 ## 1. Introdução e Arquitetura de Software
-## 2. Visão Lógica (_Logical View_)
-## 3. Visão de Desenvolvimento (_Development View_)
-## 4. Visão de Processo (_Process View_)
-## 5. Visão Evolutiva (_Deployment View_)
-## 6. Casos de Utilização (_Use Cases_)
+## 2. Visão 4+1
+### 2.1. Visão Lógica (_Logical View_)
+### 2.2. Visão de Desenvolvimento (_Development View_)
+### 2.3. Visão de Processo (_Process View_)
+### 2.4. Visão Evolutiva (_Deployment View_)
+### 2.5. Casos de Utilização (_Use Cases_)
 
 ### Relatório elaborado por:
 * [Gonçalo Ribeiro](https://github.com/gribeirofeup),  goncalo.ribeiro@fe.up.pt - %
