@@ -9,6 +9,8 @@
 ### 2.1. Visão Lógica (_Logical View_)
 ### 2.2. Visão de Implementação (_Implementation / Development View_)
 ### 2.3. Visão de Processo (_Process View_)
+Um diagrama de atividades facilita a compreensão do fluxo entre as várias atividades envolvidas numa aplicação.No diagrama seguinte, é possível ver o fluxo de atividades para o jogo Hextris.
+![Diagrama de atividades](https://raw.githubusercontent.com/Spininador/hextris/esof_hextris/ESOF-docs/resources/activitydiagram.PNG)
 ### 2.4. Visão Evolutiva (_Deployment View_)
 ### 2.5. Casos de Utilização (_Use Cases_)
 
