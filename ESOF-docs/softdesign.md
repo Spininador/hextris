@@ -11,6 +11,13 @@
 ### 2.3. Visão de Processo (_Process View_)
 Um diagrama de atividades facilita a compreensão do fluxo entre as várias atividades envolvidas numa aplicação.No diagrama seguinte, é possível ver o fluxo de atividades para o jogo Hextris.
 ![Diagrama de atividades](https://raw.githubusercontent.com/Spininador/hextris/esof_hextris/ESOF-docs/resources/activitydiagram.PNG)
+No início do jogo, é possível observar que a primeira atividade realizada é a inicialização de definições da janela.Isto envolve a definição da resolução do elemento canvas em HTML, da framerate que o jogo terá, adaptação para telemóvel, cores de alguns elementos, entre outras definições.
+De seguida, são inicializadas as definições do menu, em conjunto com vários objetos que são responsáveis por receber Input do utilizador(Key listeners), imprimir a imagem(Render) e atualizar o estado atual(Update game).
+A partir do menu, podem ser realizadas 3 tarefas: abrir Highscores, que mostrará as melhores pontuações e retornará de seguida ao Menu, Instruções de como jogar, que também retornará posteriormente ao Menu, e Jogar, que levará à inicialização das definições de jogo.
+Estas consistem em estabelecer as possíveis cores dos blocos, o número de lados da peça central, velocidade de queda de peças, entre muitas outras.De seguida será iniciado o ciclo de jogo, onde, em conjunto com menu, são usadas as várias funções responsáveis por imprimir a imagem, receber Input e atualizar o jogo.
+A saída do processo pode ser alcançada através do menu ou através do jogo ao fechar a janela, não existindo forma interna de sair do jogo, já que é jogado no browser.
+
+
 ### 2.4. Visão Evolutiva (_Deployment View_)
 ### 2.5. Casos de Utilização (_Use Cases_)
 
