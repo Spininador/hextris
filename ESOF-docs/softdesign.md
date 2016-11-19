@@ -46,8 +46,9 @@ A partir do menu, podem ser realizadas 3 tarefas: abrir Highscores, que mostrar�
 Estas consistem em estabelecer as possíveis cores dos blocos, o número de lados da peça central, velocidade de queda de peças, entre muitas outras. De seguida será iniciado o ciclo de jogo, onde, em conjunto com menu, são usadas as várias funções responsáveis por imprimir a imagem, receber Input e atualizar o jogo.
 A saída do processo pode ser alcançada através do menu ou através do jogo ao fechar a janela, não existindo forma interna de sair do jogo, já que é jogado no browser.
 
-
 ### 2.4. Vista Evolutiva (_Deployment View_)
+![Diagrama de componentes](https://raw.githubusercontent.com/Spininador/hextris/esof_hextris/ESOF-docs/resources/hextris_deployment.PNG)
+
 ### 2.5. Casos de Utilização (_Use Cases_)
 
 ### Relatório elaborado por:
