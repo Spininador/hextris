@@ -27,20 +27,27 @@ O modelo de vistas 4+1 permite agregar vários pontos de vista sobre o mesmo sof
 
 4+1 is a view model designed by Philippe Kruchten for "describing the architecture of software-intensive systems, based on the use of multiple, concurrent views". The views are used to describe the system from the viewpoint of different stakeholders, such as end-users, developers and project managers. The four views of the model are logical, development, process and physical view. In addition selected use cases or scenarios are used to illustrate the architecture serving as the 'plus one' view. Hence the model contains 4+1 views:[
 -->
-## 2. Visão 4+1
-### 2.1. Visão Lógica (_Logical View_)
-### 2.2. Visão de Implementação (_Implementation / Development View_)
-### 2.3. Visão de Processo (_Process View_)
-Um diagrama de atividades facilita a compreensão do fluxo entre as várias atividades envolvidas numa aplicação.No diagrama seguinte, é possível ver o fluxo de atividades para o jogo Hextris.
+## 2. Vista 4+1
+### 2.1. Vista Lógica (_Logical View_)
+### 2.2. Vista de Implementação (_Implementation / Development View_)
+A vista de implementação tem como objetivo relacionar cada componente do software entre si, e ilustrar as dependências entre eles, do ponto de vista do programador. Também pode ser chamada vista de desenvolvimento.
+Normalmente é usado o diagrama UML de componentes para mostrar diretamente esta vista. No diagrama que se segue é possível ver o diagrama de componentes que desenvolvemos relativamente ao software em causa.
+
+![Diagrama de componentes](https://raw.githubusercontent.com/Spininador/hextris/esof_hextris/ESOF-docs/resources/implementationview.jpg)
+
+Cada componente representa uma parte modular do programa. No _Hextris_, o utilizador acede ao jogo através de menus, e portanto todo o input do jogador passa primeiro por estes. Por sua vez, estes menus necessitam das funcionalidades do jogo para o controlar, dependendo portanto do componente Game Engine. Para além disso, estes dois componentes necessitam de desenhar no ecrã todo o ambiente de jogo (dentro e fora dos menus), dependendo portanto das funcionalidades disponibilizadas por Render. Por fim, este último componente depende de bibliotecas de JQuery e outros, definidas em Vendor.
+
+### 2.3. Vista de Processo (_Process View_)
+Um diagrama de atividades facilita a compreensão do fluxo entre as várias atividades envolvidas numa aplicação. No diagrama seguinte, é possível ver o fluxo de atividades para o jogo Hextris.
 ![Diagrama de atividades](https://raw.githubusercontent.com/Spininador/hextris/esof_hextris/ESOF-docs/resources/activitydiagram.PNG)
-No início do jogo, é possível observar que a primeira atividade realizada é a inicialização de definições da janela.Isto envolve a definição da resolução do elemento canvas em HTML, da framerate que o jogo terá, adaptação para telemóvel, cores de alguns elementos, entre outras definições.
+No início do jogo, é possível observar que a primeira atividade realizada é a inicialização de definições da janela. Isto envolve a definição da resolução do elemento canvas em HTML, da framerate que o jogo terá, adaptação para telemóvel, cores de alguns elementos, entre outras definições.
 De seguida, são inicializadas as definições do menu, em conjunto com vários objetos que são responsáveis por receber Input do utilizador(Key listeners), imprimir a imagem(Render) e atualizar o estado atual(Update game).
 A partir do menu, podem ser realizadas 3 tarefas: abrir Highscores, que mostrará as melhores pontuações e retornará de seguida ao Menu, Instruções de como jogar, que também retornará posteriormente ao Menu, e Jogar, que levará à inicialização das definições de jogo.
-Estas consistem em estabelecer as possíveis cores dos blocos, o número de lados da peça central, velocidade de queda de peças, entre muitas outras.De seguida será iniciado o ciclo de jogo, onde, em conjunto com menu, são usadas as várias funções responsáveis por imprimir a imagem, receber Input e atualizar o jogo.
+Estas consistem em estabelecer as possíveis cores dos blocos, o número de lados da peça central, velocidade de queda de peças, entre muitas outras. De seguida será iniciado o ciclo de jogo, onde, em conjunto com menu, são usadas as várias funções responsáveis por imprimir a imagem, receber Input e atualizar o jogo.
 A saída do processo pode ser alcançada através do menu ou através do jogo ao fechar a janela, não existindo forma interna de sair do jogo, já que é jogado no browser.
 
 
-### 2.4. Visão Evolutiva (_Deployment View_)
+### 2.4. Vista Evolutiva (_Deployment View_)
 ### 2.5. Casos de Utilização (_Use Cases_)
 
 ### Relatório elaborado por:
