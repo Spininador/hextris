@@ -4,7 +4,29 @@
 
 ![Logo do Hextris](https://raw.githubusercontent.com/Spininador/hextris/esof_hextris/favicon.ico)
 
-## 1. Introdução e Arquitetura de Software
+## 1. Introdução
+O presente relatório visa a análise da *Arquitetura de _Software_* empregue no desenvolvimento do *Hetris*. Pretendemos identificar e criticar os diferentes _arquitectural patterns_ que possam estar a ser utilizadoes, assim como analisar este projecto à luz do *Modelo de Vista 4+1*.
+
+### 1.1 Arquitetura de Software
+Arquitetura de _Software_ é a organização interna de um projecto - um conjunto de vários componentes de _sofware_ e das suas inter-relações. Todos os princípios que regem o _desgin_ e evolução destes componentes fazem parte deste conceito de arquitectura.
+
+A problemática abordada pela arquitetura de _software_ é a escolha da estrutura de um programa. Esta estrutura - _arquitectural pattern_ - tem que servir às necessidades tanto do _sofware_ como dos _developers_, garantindo eficácia na funcionalidade do programa e, simultaneamente, flexibilidade e eficiência de implementação. Após a implementação, é muito custoso fazer alterações ao nível estrutural do programa, daí a grande importância de escolher um _arquitectural pattern_ adequado.
+
+### 1.2 Modelo de Vista 4+1
+O conceito de _"view model 4+1"_ foi introduzido em 1995 por Philippe Kruchten como sendo um modelo de visão para "descrever a arquitetura de sistemas de _software_, baseado no uso de multiplas vistas concorrentes". Cada uma desta vistas permite elucidar uma componente da arquitectura do projecto aos diferentes intervenientes:
+
+* Para os engenheiros e _developers_ existe a *visão de implementação* e a *visão de processo*;
+* Para os _end users_, clientes e analistas existe a *visão lógica*;
+* Para _lead developers_ e _project managers_ existe a *visão evolutiva*.
+
+Adicionalmente, são utilizados *casos de uso* e cenários possíveis para ilustrar o funcionamento do projecto, sendo assim constituinda a visão "+1" deste modelo.
+<!--
+This model allows the various Stakeholders to find what they want to know about the software architecture. Systems engineers approach it from the Physical View, then the Process View. End-users, customers, data specialists from the Logical View. Project managers, software configuration staff see it from the Development View.
+
+O modelo de vistas 4+1 permite agregar vários pontos de vista sobre o mesmo software para dar uma perspectiva o mais completa possível sobre o mesmo. Este modelo baseia-se em quatro componentes, mais concretamente: vista lógica, representada pelo diagrama de pacotes do projeto; vista de implementação, representada pelo diagrama de componentes, vista de processo, representada pelo diagrama de atividades, e a vista de deployment, represenada pelo diagrama de deployment.
+
+4+1 is a view model designed by Philippe Kruchten for "describing the architecture of software-intensive systems, based on the use of multiple, concurrent views". The views are used to describe the system from the viewpoint of different stakeholders, such as end-users, developers and project managers. The four views of the model are logical, development, process and physical view. In addition selected use cases or scenarios are used to illustrate the architecture serving as the 'plus one' view. Hence the model contains 4+1 views:[
+-->
 ## 2. Visão 4+1
 ### 2.1. Visão Lógica (_Logical View_)
 ### 2.2. Visão de Implementação (_Implementation / Development View_)
