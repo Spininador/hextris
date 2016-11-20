@@ -78,7 +78,7 @@ Para melhor ilustrar a arquitetura do software em questão, apresentamos em segu
 
 No menu principal, o utilizador pode navegar para qualquer uma das seguintes iterações: Play (dá início ao jogo, entrando no estado de jogo), Help (permite visualizar um sucinto resumo que explica as regras do jogo e como jogá-lo, fornecendo ainda links para as páginas pessoais dos seus criadores, para o website do jogo e para as páginas iOS e Android do jogo), Facebook/Twitter (permite partilhar um link para o jogo nas redes sociais Facebook e/ou Twitter) e Get On Google Play/Download On The App Store (remete o utilizador para as já mencionadas páginas iOS e Android do jogo, onde é possível descarregá-lo de graça).
 
-[!Diagrama de casos de so do user](https://raw.githubusercontent.com/Spininador/hextris/esof_hextris/ESOF-docs/resources/usercasediagramgame.PNG)
+![Diagrama de casos de uso do user](https://raw.githubusercontent.com/Spininador/hextris/esof_hextris/ESOF-docs/resources/usercasediagramgame.PNG)
 
 No estado de jogo, o são disponibilizados aos utilizador as ações de rotação do hexágono (para a direita ou para a esquerda) e a de parar o jogo (símbolo "pause" no canto inferior direito).
 
