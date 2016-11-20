@@ -72,12 +72,23 @@ A saída do processo pode ser alcançada através do menu ou através do jogo ao
 ![Diagrama de componentes](https://raw.githubusercontent.com/Spininador/hextris/esof_hextris/ESOF-docs/resources/hextris_deployment.PNG)
 
 ### 2.5. Casos de Utilização (_Use Cases_)
+Para melhor ilustrar a arquitetura do software em questão, apresentamos em seguida os dois diagramas de casos de uso, elaborado para o relatório anterior e que complementa o que já foi dito neste relatório.
+
+![Diagrama de casos de uso do menu](https://raw.githubusercontent.com/Spininador/hextris/esof_hextris/ESOF-docs/resources/usercasemainmenu.PNG)
+
+No menu principal, o utilizador pode navegar para qualquer uma das seguintes iterações: Play (dá início ao jogo, entrando no estado de jogo), Help (permite visualizar um sucinto resumo que explica as regras do jogo e como jogá-lo, fornecendo ainda links para as páginas pessoais dos seus criadores, para o website do jogo e para as páginas iOS e Android do jogo), Facebook/Twitter (permite partilhar um link para o jogo nas redes sociais Facebook e/ou Twitter) e Get On Google Play/Download On The App Store (remete o utilizador para as já mencionadas páginas iOS e Android do jogo, onde é possível descarregá-lo de graça).
+
+[!Diagrama de casos de so do user](https://raw.githubusercontent.com/Spininador/hextris/esof_hextris/ESOF-docs/resources/usercasediagramgame.PNG)
+
+No estado de jogo, o são disponibilizados aos utilizador as ações de rotação do hexágono (para a direita ou para a esquerda) e a de parar o jogo (símbolo "pause" no canto inferior direito).
+
+Após a terminação do jogo, é incializado o estado de fim de jogo, onde são apresentadas ao utilizador a opção Replay (inicializa um novo estado de jogo) ou Share My Score (dirige o utilizador para o Twitter, sugerindo-lhe um post no qual são apresentados a sua pontuação e um link para o jogo). O utilizador pode ainda, neste estado, partilhar o jogo no Facebook ou Twitter.
 
 ### Relatório elaborado por:
-* [Gonçalo Ribeiro](https://github.com/gribeirofeup),  goncalo.ribeiro@fe.up.pt - %
-* [Nuno Corte-Real](https://github.com/nunocr), 	up201405158@fe.up.pt - %
-* [Nuno Martins](https://github.com/Spininador), 	up201405079@fe.up.pt - %
-* [Rui Soares](https://github.com/RuiCS),		up201404965@fe.up.pt - %
+* [Gonçalo Ribeiro](https://github.com/gribeirofeup),  goncalo.ribeiro@fe.up.pt - 25%
+* [Nuno Corte-Real](https://github.com/nunocr), 	up201405158@fe.up.pt - 25%
+* [Nuno Martins](https://github.com/Spininador), 	up201405079@fe.up.pt - 25%
+* [Rui Soares](https://github.com/RuiCS),		up201404965@fe.up.pt - 25%
 
 <!-- The goal of this third assignment is to document the architecture an design choices of the software application of choice. 
 
