@@ -35,7 +35,7 @@ O objectivo deste tipo de diagramas é permitir ao seu observador uma percepçã
 
 O projeto que abordamos foi realizado recorrendo à linguagem de programação orientada por objectos Javascript. Esta linguagem não possui em si o conceito tradicional de "classe"; no entanto, por ser também uma linguagem baseada em protótipos, é possível simular o comportamento deste tipo de objectos recorrendo a polimorfismos e/ou derivações dos vários objectos criados. Consideramos que foi recorrendo a esta técnica que foi construída a lógica do Hextris. Uma possível corroboração desta asserção é o facto terem sido capitalizadas nos ficheiros do código do projeto a primeira letra dos nomes relativos a objectos do jogo, protocolo geralmente usado em classes.
 
-![Diagrama de componentes](https://raw.githubusercontent.com/Spininador/hextris/esof_hextris/ESOF-docs/resources/logicalviewdiagram.jpg)
+![Diagrama de componentes](https://raw.githubusercontent.com/Spininador/hextris/esof_hextris/ESOF-docs/resources/logicalviewdiagram.PNG)
 
 Pela análise ao diagrama de vista lógica, inferem-se os seguintes pacotes:
 
