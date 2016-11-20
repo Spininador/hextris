@@ -29,6 +29,28 @@ O modelo de vistas 4+1 permite agregar vários pontos de vista sobre o mesmo sof
 -->
 ## 2. Vista 4+1
 ### 2.1. Vista Lógica (_Logical View_)
+A vista lógica consiste na abstração sob a forma de um diagrama da estrutura de organização da componente lógica de um projeto.
+Neste tipo de diagramas é dada atenção especial à maneira como as classes de um projecto se organizam e interagem entre si, sendo estas agrupadas em "pacotes" lógicos que representam classes logicamente semelhantes e/ou intrinsicamente relacionadas.
+O objectivo deste tipo de diagramas é permitir ao seu observador uma percepção da arquitetura de um projeto e das suas camadas lógicas de uma forma geralmente mais abstrata, onde a componente técnica (por exemplo, hardware, detalhes técnicos do código, etc.) toma um papel secundário.
+
+O projeto que abordamos foi realizado recorrendo à linguagem de programação orientada por objectos Javascript. Esta linguagem não possui em si o conceito tradicional de "classe"; no entanto, por ser também uma linguagem baseada em protótipos, é possível simular o comportamento deste tipo de objectos recorrendo a polimorfismos e/ou derivações dos vários objectos criados. Consideramos que foi recorrendo a esta técnica que foi construída a lógica do Hextris. Uma possível corroboração desta asserção é o facto terem sido capitalizadas nos ficheiros do código do projeto a primeira letra dos nomes relativos a objectos do jogo, protocolo geralmente usado em classes.
+
+![Diagrama de componentes](https://raw.githubusercontent.com/Spininador/hextris/esof_hextris/ESOF-docs/resources/logicalviewdiagram.jpg)
+
+Pela análise ao diagrama de vista lógica, inferem-se os seguintes pacotes:
+
+Inicialização, onde são preparadas as componentes necessárias ao início do jogo, tais como elementos visuais, escalas e tamanhos das telas, handlers de input, etc.;
+
+Lógica do Jogo, onde é implementada toda a lógica, mecânicas e funcionamento do jogo, assim como a atualização do seu estado;
+
+Objectos InGame, onde são definidos todos os objectos utilizados no jogo, assim como as suas propriedades (são aqui utilizadas as técnicas de simulação de classes);
+
+Visualização, onde é implementada a visuaização e o render dos objectos e menus do jogo;
+
+Utilizador, onde é gerido e manuseado o input do utilizador;
+
+Utilidades, onde são guardados certos métodos úteis para o resto do código, neste caso, métodos matemáticos ligados à rotação de objectos no jogo.
+
 ### 2.2. Vista de Implementação (_Implementation / Development View_)
 A vista de implementação tem como objetivo relacionar cada componente do software entre si, e ilustrar as dependências entre eles, do ponto de vista do programador. Também pode ser chamada vista de desenvolvimento.
 Normalmente é usado o diagrama UML de componentes para mostrar diretamente esta vista. No diagrama que se segue é possível ver o diagrama de componentes que desenvolvemos relativamente ao software em causa.
