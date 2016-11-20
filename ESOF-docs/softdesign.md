@@ -12,6 +12,9 @@ Arquitetura de _Software_ é a organização interna de um projecto - um conjunt
 
 A problemática abordada pela arquitetura de _software_ é a escolha da estrutura de um programa. Esta estrutura - _arquitectural pattern_ - tem que servir às necessidades tanto do _sofware_ como dos _developers_, garantindo eficácia na funcionalidade do programa e, simultaneamente, flexibilidade e eficiência de implementação. Após a implementação, é muito custoso fazer alterações ao nível estrutural do programa, daí a grande importância de escolher um _arquitectural pattern_ adequado.
 
+O _architetural pattern_ aplicado no _Hextris_ é, a nosso ver, o de _multitiered architecture_. Neste, todas as ferramentas de visualização, lógica, e _input_ do utilizador estão separadas em componentes diferentes, o que é o que se verifica no jogo em questão. Porém, neste não é necessária a utilização de uma camada dedicada a armazenamento de dados, devido à natureza do software, um jogo.
+Achamos que a aplicação deste padrão é adequada, já que separa os componentes em camadas flexíveis e extensíveis, mesmo dependendo umas das outras.
+
 ### 1.2 Modelo de Vista 4+1
 O conceito de _"view model 4+1"_ foi introduzido em 1995 por Philippe Kruchten como sendo um modelo de visão para "descrever a arquitetura de sistemas de _software_, baseado no uso de multiplas vistas concorrentes". Cada uma desta vistas permite elucidar uma componente da arquitectura do projecto aos diferentes intervenientes:
 
