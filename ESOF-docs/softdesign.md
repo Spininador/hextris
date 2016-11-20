@@ -23,13 +23,7 @@ O conceito de _"view model 4+1"_ foi introduzido em 1995 por Philippe Kruchten c
 * Para _lead developers_ e _project managers_ existe a *visão evolutiva*.
 
 Adicionalmente, são utilizados *casos de uso* e cenários possíveis para ilustrar o funcionamento do projecto, sendo assim constituinda a visão "+1" deste modelo.
-<!--
-This model allows the various Stakeholders to find what they want to know about the software architecture. Systems engineers approach it from the Physical View, then the Process View. End-users, customers, data specialists from the Logical View. Project managers, software configuration staff see it from the Development View.
 
-O modelo de vistas 4+1 permite agregar vários pontos de vista sobre o mesmo software para dar uma perspectiva o mais completa possível sobre o mesmo. Este modelo baseia-se em quatro componentes, mais concretamente: vista lógica, representada pelo diagrama de pacotes do projeto; vista de implementação, representada pelo diagrama de componentes, vista de processo, representada pelo diagrama de atividades, e a vista de deployment, represenada pelo diagrama de deployment.
-
-4+1 is a view model designed by Philippe Kruchten for "describing the architecture of software-intensive systems, based on the use of multiple, concurrent views". The views are used to describe the system from the viewpoint of different stakeholders, such as end-users, developers and project managers. The four views of the model are logical, development, process and physical view. In addition selected use cases or scenarios are used to illustrate the architecture serving as the 'plus one' view. Hence the model contains 4+1 views:[
--->
 ## 2. Vista 4+1
 ### 2.1. Vista Lógica (_Logical View_)
 A vista lógica consiste na abstração sob a forma de um diagrama da estrutura de organização da componente lógica de um projeto.
@@ -42,17 +36,12 @@ O projeto que abordamos foi realizado recorrendo à linguagem de programação o
 
 Pela análise ao diagrama de vista lógica, inferem-se os seguintes pacotes:
 
-Inicialização, onde são preparadas as componentes necessárias ao início do jogo, tais como elementos visuais, escalas e tamanhos das telas, handlers de input, etc.;
-
-Lógica do Jogo, onde é implementada toda a lógica, mecânicas e funcionamento do jogo, assim como a atualização do seu estado;
-
-Objectos InGame, onde são definidos todos os objectos utilizados no jogo, assim como as suas propriedades (são aqui utilizadas as técnicas de simulação de classes);
-
-Visualização, onde é implementada a visuaização e o render dos objectos e menus do jogo;
-
-Utilizador, onde é gerido e manuseado o input do utilizador;
-
-Utilidades, onde são guardados certos métodos úteis para o resto do código, neste caso, métodos matemáticos ligados à rotação de objectos no jogo.
+* Inicialização, onde são preparadas as componentes necessárias ao início do jogo, tais como elementos visuais, escalas e tamanhos das telas, handlers de input, etc.;
+* Lógica do Jogo, onde é implementada toda a lógica, mecânicas e funcionamento do jogo, assim como a atualização do seu estado;
+* Objectos InGame, onde são definidos todos os objectos utilizados no jogo, assim como as suas propriedades (são aqui utilizadas as técnicas de simulação de classes);
+* Visualização, onde é implementada a visuaização e o render dos objectos e menus do jogo;
+* Utilizador, onde é gerido e manuseado o input do utilizador;
+* Utilidades, onde são guardados certos métodos úteis para o resto do código, neste caso, métodos matemáticos ligados à rotação de objectos no jogo.
 
 ### 2.2. Vista de Implementação (_Implementation / Development View_)
 A vista de implementação tem como objetivo relacionar cada componente do software entre si, e ilustrar as dependências entre eles, do ponto de vista do programador. Também pode ser chamada vista de desenvolvimento.
@@ -64,15 +53,21 @@ Cada componente representa uma parte modular do programa. No _Hextris_, o utiliz
 
 ### 2.3. Vista de Processo (_Process View_)
 Um diagrama de atividades facilita a compreensão do fluxo entre as várias atividades envolvidas numa aplicação. No diagrama seguinte, é possível ver o fluxo de atividades para o jogo Hextris.
+
 ![Diagrama de atividades](https://raw.githubusercontent.com/Spininador/hextris/esof_hextris/ESOF-docs/resources/activitydiagram.PNG)
-No início do jogo, é possível observar que a primeira atividade realizada é a inicialização de definições da janela. Isto envolve a definição da resolução do elemento canvas em HTML, da framerate que o jogo terá, adaptação para telemóvel, cores de alguns elementos, entre outras definições.
-De seguida, são inicializadas as definições do menu, em conjunto com vários objetos que são responsáveis por receber Input do utilizador(Key listeners), imprimir a imagem(Render) e atualizar o estado atual(Update game).
-A partir do menu, podem ser realizadas 3 tarefas: abrir Highscores, que mostrará as melhores pontuações e retornará de seguida ao Menu, Instruções de como jogar, que também retornará posteriormente ao Menu, e Jogar, que levará à inicialização das definições de jogo.
-Estas consistem em estabelecer as possíveis cores dos blocos, o número de lados da peça central, velocidade de queda de peças, entre muitas outras. De seguida será iniciado o ciclo de jogo, onde, em conjunto com menu, são usadas as várias funções responsáveis por imprimir a imagem, receber Input e atualizar o jogo.
+
+No início do jogo, é possível observar que a primeira atividade realizada é a inicialização de definições da janela. Isto envolve a definição da resolução do elemento canvas em HTML, da framerate que o jogo terá, adaptação para telemóvel, cores de alguns elementos, entre outras definições. De seguida, são inicializadas as definições do menu, em conjunto com vários objetos que são responsáveis por receber Input do utilizador(Key listeners), imprimir a imagem(Render) e atualizar o estado atual(Update game).
+
+A partir do menu, podem ser realizadas 3 tarefas: abrir Highscores, que mostrará as melhores pontuações e retornará de seguida ao Menu, Instruções de como jogar, que também retornará posteriormente ao Menu, e Jogar, que levará à inicialização das definições de jogo. Estas consistem em estabelecer as possíveis cores dos blocos, o número de lados da peça central, velocidade de queda de peças, entre muitas outras. De seguida será iniciado o ciclo de jogo, onde, em conjunto com menu, são usadas as várias funções responsáveis por imprimir a imagem, receber Input e atualizar o jogo.
+
 A saída do processo pode ser alcançada através do menu ou jogo ao fechar a janela, não existindo forma interna de sair do jogo, já que é jogado no browser.
 
 ### 2.4. Vista Evolutiva (_Deployment View_)
+A *vista evolutiva* expõe a topologia de um projecto, dando a compreender quais os dispositivos onde o *software* irá actuar e de que forma é que estes se relacionam e comunicam entre si. Em suma, permite ao utilizador obter uma visão geral do ambiente físico onde funcionará o sistem.
+
 ![Diagrama de componentes](https://raw.githubusercontent.com/Spininador/hextris/esof_hextris/ESOF-docs/resources/hextris_deployment.PNG)
+
+No caso do _Hextris_, a infraestrutura que suporta o funcionamento do jogo é simples. O jogo é hospedado pelo dispositivo do utilizador, seja este um PC ou um _smartphone_. Com a adição de _highscores_, foi criado um servidor HTTP que contem uma base de dados de pontuações. No final de cada jogo de _Hextris_, há um intercâmbio de informação entre este servidor e o dispositivo do utilizador.
 
 ### 2.5. Casos de Utilização (_Use Cases_)
 Para melhor ilustrar a arquitetura do software em questão, apresentamos em seguida os dois diagramas de casos de uso, elaborado para o relatório anterior e que complementa o que já foi dito neste relatório.
