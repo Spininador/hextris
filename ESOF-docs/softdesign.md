@@ -63,7 +63,7 @@ A partir do menu, podem ser realizadas 3 tarefas: abrir Highscores, que mostrar�
 A saída do processo pode ser alcançada através do menu ou jogo ao fechar a janela, não existindo forma interna de sair do jogo, já que é jogado no browser.
 
 ### 2.4. Vista Evolutiva (_Deployment View_)
-A *vista evolutiva* expõe a topologia de um projecto, dando a compreender quais os dispositivos onde o *software* irá actuar e de que forma é que estes se relacionam e comunicam entre si. Em suma, permite ao utilizador obter uma visão geral do ambiente físico onde funcionará o sistem.
+A *vista evolutiva* expõe a topologia de um projecto, dando a compreender quais os dispositivos onde o *software* irá actuar e de que forma é que estes se relacionam e comunicam entre si. Em suma, permite ao utilizador obter uma visão geral do ambiente físico onde funcionará o sistema.
 
 ![Diagrama de componentes](https://raw.githubusercontent.com/Spininador/hextris/esof_hextris/ESOF-docs/resources/hextris_deployment.PNG)
 
