@@ -7,7 +7,23 @@
 # 1. Testablidade de Software e _Reviews_
 # 2. Estatísticas de teste
 # 3. Identificação de um _bug_ e correção
-
+Devido à pequena escala do projeto, é difícil encontrar bugs, no entanto, foi identificado um "pequeno grande" bug, já que este pode causar que jogo ficar invisível, mas a sua correção é bastante rápida.
+## Descrição do _bug_
+Quando uma peça aterra no Hex central, é chamada a função shake(), que faz o Hex central, em conjunto com todas as peças anteriormente colocadas, abanarem numa certa direção.
+Este abalo tem uma magnitude extremamente baixa, quase não percetível.No entanto, algumas vezes, este seria tao forte que faria a Hex sair da área de jogo, e por vezes até do ecrã e nunca mais voltar.
+![Logo do Hextris](https://raw.githubusercontent.com/Spininador/hextris/esof_hextris/bug.PNG)
+Na imagem pode-se observar a Hex central a afastar-se do centro, algo que não deveria acontecer.
+## Causa do _bug_
+O bug está na função shake(), em Hex.js , linha 35, que recebe _magnitude_ como parâmetro, movendo a Hex na direção pretendida numa distância proporcional a _magnitude_.
+Depois de a nova posição da Hex ser calculada a partir de _magnitude_, o valor desta variável é decrementado, para que o abalo na próxima iteração seja menor, até que pára quando o valor de _magnitude_ for menor que 1.
+O problema está na função usada para realizar a decrementação de _magnitude_, que é: "_obj.magnitude /= 2 * this.dt;_".
+Na maior parte dos dispositivos usados para jogar, e possívelmente no disposítivo usado pelo _developer_, _this.dt_, que representa a variação de tempo desde a iteração anterior, toma valores superiores a 0,5.
+No entanto, foi possível observar que nalguns casos, o valor de _this.dt_ tomaria valores menores que 0,5.Isto leva a que o novo valor de _magnitude_ seja dividido por um valor menor que 1, e, por isso, incremente.
+Já que o _offset_ da peça central durante o abalo é calculado a partir de _magnitude_, quando esta aumenta, o _offset_ aumentará também infinitamente.
+## Correção do _bug_
+A correção do bug foi feita ao alterar a linha "_obj.magnitude /= 2 * this.dt;_" para "_obj.magnitude -= 2 * this.dt;_".Assim, mesmo que o valor de _this.dt_ seja inferior a 0,5 , não haverá problemas, pois a decrementação será constante.
+## Pull Request
+Foi criado um novo branch chamado "_esof\_bugfix_" , no qual foi corrigido o _bug_ enunciado, e, posteriormente, efetuado um _pull request_ para o fork/branch principal.
 ### Relatório elaborado por:
 * [Gonçalo Ribeiro](https://github.com/gribeirofeup),  goncalo.ribeiro@fe.up.pt - %
 * [Nuno Corte-Real](https://github.com/nunocr), 	up201405158@fe.up.pt - %

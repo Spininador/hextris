@@ -32,8 +32,7 @@ function Hex(sideLength) {
 		var dy = Math.sin(angle) * obj.magnitude;
 		gdx -= dx;
 		gdy += dy;
-		console.log(obj.magnitude);
-		obj.magnitude -= 2 * this.dt;
+		obj.magnitude -= 2*this.dt;
 		if (obj.magnitude < 1) {
 			for (var i = 0; i < this.shakes.length; i++) {
 				if (this.shakes[i] == obj) {
