@@ -11,7 +11,7 @@ Devido à pequena escala do projeto, é difícil encontrar bugs, no entanto, foi
 ## Descrição do _bug_
 Quando uma peça aterra no Hex central, é chamada a função shake(), que faz o Hex central, em conjunto com todas as peças anteriormente colocadas, abanarem numa certa direção.
 Este abalo tem uma magnitude extremamente baixa, quase não percetível.No entanto, algumas vezes, este seria tao forte que faria a Hex sair da área de jogo, e por vezes até do ecrã e nunca mais voltar.
-![Logo do Hextris](https://raw.githubusercontent.com/Spininador/hextris/esof_hextris/bug.PNG)
+![Bug](https://raw.githubusercontent.com/Spininador/hextris/esof_hextris/ESOF-docs/resources/bug.PNG)
 Na imagem pode-se observar a Hex central a afastar-se do centro, algo que não deveria acontecer.
 ## Causa do _bug_
 O bug está na função shake(), em Hex.js , linha 35, que recebe _magnitude_ como parâmetro, movendo a Hex na direção pretendida numa distância proporcional a _magnitude_.
