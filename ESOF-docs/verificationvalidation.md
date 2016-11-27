@@ -8,8 +8,12 @@
 Como complemento aos relatórios anteriores sobre o projeto _Hextris_, foi-nos proposta a análise e consequente elaboração do relatório da vertente de testabilidade do projeto em questão. Em contraste às propostas anteriores, esta implica uma cuidadosa leitura do código-fonte, e dos testes nele presentes, para poder inferir sobre o grau de testabilidade do código, a cobertura de testes, etc.
 Para além disto, depois da análise de testes do software foi-nos sugerido também encontrar e corrigir um _bug_, e relatar este processo neste documento.
 
-
 # 2. Testablidade de Software
+A avaliação da testabilidade do software é crucial para garantir que mantém a sua integridade e qualidade como produto final. Assim, quer-se o maior grau de testabilidade possível, para garantir que todos os módulos ou componentes do projeto estão bem testados, seja em quantidade de testes como na sua qualidade.
+A falta de testes no projeto pode levar a não serem detetados _bugs_ importantes que detêm o utilizador final da experiência completa (e correta) do produto. Cabe então ao(s) _developer(s)_ (e neste caso, como o projeto é _open-source_, qualquer utilizador disposto a tal), construir toda a heurística de testes para o software, e otimizar a sua coerência e qualidade.
+
+No tipo de projeto que temos em análise, um jogo, a testabilidade é algo difícil de analisar. Por um lado, sendo fácil testar modularmente o motor de jogo, é difícil conceber casos de teste para todos os estados possíveis de jogo. Para além disso, é um desafio testar a parte visual do projeto.
+
 ## 2.1. Controlabilidade
 ## 2.2. Observabilidade
 ## 2.3. _Isoleability_
