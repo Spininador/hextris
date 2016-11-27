@@ -22,36 +22,59 @@ Como no projeto em causa não são realizados quaisquer testes, para fazermos es
 A controlabilidade dos testes é definida como o grau de controlo dos componentes sob teste (CUT) em relação ao teste. Isto implica que uma maior controlabilidade de testes é obtida quanto mais flexíveis forem as estruturas a serem testadas.
 Assim, o objetivo é que o objeto a ser testado não seja demasiado específico para um estado em concreto, mas sim flexível para vários estados do ambiente de teste.
 
-Para o projeto em questão, seria importante a realização de testes unitários sobre os componentes de jogo, no módulo do motor de jogo. No entanto, é visível aqui um problema: muitas das propriedades dos objetos estão _hard-coded_, ou seja, definidos apenas dentro do corpo das funções, sendo que isto limita significativamente a manipulação destes objetos. Para além disto, os seus comportamentos estão interdependentes, ou seja, para testar um componente é necessário fornecer um ambiente de teste já com outros objetos, ou seja, muito específico. Vem então que a controlabilidade seria bastante limitada pela forma como estão definidos estes componentes, pelo que sugeríamos uma melhor parametrização destes, de forma a torná-los mais flexíveis para ambientes de jogo diferentes.
+Para o projeto em questão, seria importante a realização de testes unitários sobre os componentes de jogo, no módulo do motor de jogo. No entanto, é visível aqui um problema: muitas das propriedades dos objetos estão _hard-coded_, ou seja, definidos apenas dentro do corpo das funções, sendo que isto limita significativamente a manipulação destes objetos. Para além disto, alguns dos seus comportamentos estão interdependentes, ou seja, para testar alguns componentes é necessário fornecer um ambiente de teste já com outros objetos, ou seja, bastante específico. Damos aqui o exemplo dos blocos, que dependem da posição do hexágono central, e a sua posição final depende da deste último. 
+
+Vem então que a controlabilidade seria bastante limitada pela forma como estão definidos estes componentes, pelo que sugeríamos uma melhor parametrização destes, de forma a torná-los mais flexíveis para ambientes de jogo diferentes.
+
 ## 2.2. Observabilidade
+A observabilidade de testes demonstra quão facilmente os resultados (intermédios e/ou finais) dos testes realizados são passíveis de serem observados.
+
+Isto implica ser possível de ver todos os passos que levaram ao resultado final do teste, e idealmente poder ser feito um _backtracking_ da execução do teste. Isto ajuda a compreender todo o mecanismo de execução do mesmo, e ajuda a isolar o que poderá ter corrido mal.
+Para além disto, uma boa observabilidade geral deve ser acompanhada de ferramentas externas que analisam e mostram as estatísticas de teste para qualquer um dos testes em análise. No entanto, o objetivo é que o _developer_ consiga, olhando para os testes, perceber exatamente o que está a acontecer em cada passo.
+Para além disto tudo, há que notar que a parte visual do software, ou seja, tudo o que implica renderização, é de observabilidade excecionalmente fácil, já que uma falha nesta implica uma renderização bizarra ou não desejada.
 
 ## 2.3. _Isoleability_
+A avaliação do fator de _isoleability_ envolve compreender quão facilmente é testar, isoladamente, cada componente sob teste (CUT).
+
+Num projeto deste tipo, quão melhor é este fator mais modular e manipulável é cada componente, independentemente do ambiente de teste aplicado. Assim, quer-se que cada componente seja uma entidade independente, pelo que quaisquer dependências de ferramentas de outros componentes diminui este fator. Já foi referido em 2.1., mas reiteramos neste ponto que há componentes que apresentam dependência de atributos/funções de outros componentes, e como tal, testar um implica introduzir no ambiente de teste o outro também.
+
 ## 2.4. Separação de preocupações
 ## 2.5. Compreensabilidade
 ## 2.6. Heterogeneidade
 # 3. Estatísticas de teste
 
 # 4. Identificação de um _bug_ e correção
+
 Devido à pequena escala do projeto, é difícil encontrar bugs, no entanto, foi identificado um "pequeno grande" bug, já que este pode causar que jogo ficar invisível, mas a sua correção foi bastante rápida.
+
 ## 4.1. Descrição do _bug_
+
 Quando uma peça aterra no Hex central, é chamada a função shake(), que faz o Hex central, em conjunto com todas as peças anteriormente colocadas, abanarem numa certa direção.
 Este abalo tem uma magnitude extremamente baixa, quase não percetível.No entanto, algumas vezes, este seria tao forte que faria a Hex sair da área de jogo, e por vezes até do ecrã e nunca mais voltar.
 
 ![Bug](https://raw.githubusercontent.com/Spininador/hextris/esof_hextris/ESOF-docs/resources/bug.PNG)
 
 Na imagem pode-se observar a Hex central a afastar-se do centro, algo que não deveria acontecer.
+
 ## 4.2. Causa do _bug_
+
 O bug está na função shake(), em Hex.js , linha 35, que recebe _magnitude_ como parâmetro, movendo a Hex na direção pretendida numa distância proporcional a _magnitude_.
 Depois de a nova posição da Hex ser calculada a partir de _magnitude_, o valor desta variável é decrementado, para que o abalo na próxima iteração seja menor, até que pára quando o valor de _magnitude_ for menor que 1.
 O problema está na função usada para realizar a decrementação de _magnitude_, que é: "_obj.magnitude /= 2 * this.dt;_".
 Na maior parte dos dispositivos usados para jogar, e possívelmente no disposítivo usado pelo _developer_, _this.dt_, que representa a variação de tempo desde a iteração anterior, toma valores superiores a 0,5.
 No entanto, foi possível observar que nalguns casos, o valor de _this.dt_ tomaria valores menores que 0,5.Isto leva a que o novo valor de _magnitude_ seja dividido por um valor menor que 1, e, por isso, incremente.
 Já que o _offset_ da peça central durante o abalo é calculado a partir de _magnitude_, quando esta aumenta, o _offset_ aumentará também infinitamente.
+
 ## 4.3. Correção do _bug_
+
 A correção do bug foi feita ao alterar a linha "_obj.magnitude /= 2 * this.dt;_" para "_obj.magnitude -= 2 * this.dt;_".Assim, mesmo que o valor de _this.dt_ seja inferior a 0,5 , não haverá problemas, pois a decrementação será constante.
+
 ## 4.4. Pull Request
+
 Foi criado um novo branch chamado "_esof\_bugfix_" , no qual foi corrigido o _bug_ enunciado, e, posteriormente, efetuado um _pull request_ para o fork/branch principal.
+
 ### Relatório elaborado por:
+
 * [Gonçalo Ribeiro](https://github.com/gribeirofeup),  goncalo.ribeiro@fe.up.pt - %
 * [Nuno Corte-Real](https://github.com/nunocr), 	up201405158@fe.up.pt - %
 * [Nuno Martins](https://github.com/Spininador), 	up201405079@fe.up.pt - %
