@@ -12,15 +12,25 @@ Para além disto, depois da análise de testes do software foi-nos sugerido tamb
 A avaliação da testabilidade do software é crucial para garantir que mantém a sua integridade e qualidade como produto final. Assim, quer-se o maior grau de testabilidade possível, para garantir que todos os módulos ou componentes do projeto estão bem testados, seja em quantidade de testes como na sua qualidade.
 A falta de testes no projeto pode levar a não serem detetados _bugs_ importantes que detêm o utilizador final da experiência completa (e correta) do produto. Cabe então ao(s) _developer(s)_ (e neste caso, como o projeto é _open-source_, qualquer utilizador disposto a tal), construir toda a heurística de testes para o software, e otimizar a sua coerência e qualidade.
 
+É de notar que a testabilidade do software é algo que varia conforme a sua escala, complexidade, objetivo, etc., e ainda da plataforma e política de testes nele empregue.
+
 No tipo de projeto que temos em análise, um jogo, a testabilidade é algo difícil de analisar. Por um lado, sendo fácil testar modularmente o motor de jogo, é difícil conceber casos de teste para todos os estados possíveis de jogo. Para além disso, é um desafio testar a parte visual do projeto.
 
+Como no projeto em causa não são realizados quaisquer testes, para fazermos esta análise de testes decidimos analisar quais seriam os melhores caminhos a tomar para garantir a boa testabilidade de software em cada um dos seus vetores.
+
 ## 2.1. Controlabilidade
+A controlabilidade dos testes é definida como o grau de controlo dos componentes sob teste (CUT) em relação ao teste. Isto implica que uma maior controlabilidade de testes é obtida quanto mais flexíveis forem as estruturas a serem testadas.
+Assim, o objetivo é que o objeto a ser testado não seja demasiado específico para um estado em concreto, mas sim flexível para vários estados do ambiente de teste.
+
+Para o projeto em questão, seria importante a realização de testes unitários sobre os componentes de jogo, no módulo do motor de jogo. No entanto, é visível aqui um problema: muitas das propriedades dos objetos estão _hard-coded_, ou seja, definidos apenas dentro do corpo das funções, sendo que isto limita significativamente a manipulação destes objetos. Para além disto, os seus comportamentos estão interdependentes, ou seja, para testar um componente é necessário fornecer um ambiente de teste já com outros objetos, ou seja, muito específico. Vem então que a controlabilidade seria bastante limitada pela forma como estão definidos estes componentes, pelo que sugeríamos uma melhor parametrização destes, de forma a torná-los mais flexíveis para ambientes de jogo diferentes.
 ## 2.2. Observabilidade
+
 ## 2.3. _Isoleability_
 ## 2.4. Separação de preocupações
 ## 2.5. Compreensabilidade
 ## 2.6. Heterogeneidade
 # 3. Estatísticas de teste
+
 # 4. Identificação de um _bug_ e correção
 Devido à pequena escala do projeto, é difícil encontrar bugs, no entanto, foi identificado um "pequeno grande" bug, já que este pode causar que jogo ficar invisível, mas a sua correção foi bastante rápida.
 ## 4.1. Descrição do _bug_
