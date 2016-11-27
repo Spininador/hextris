@@ -10,12 +10,12 @@ Para além disto, depois da análise de testes do software foi-nos sugerido tamb
 
 
 # 2. Testablidade de Software
-# 2.1. Controlabilidade
-# 2.2. Observabilidade
-# 2.3. _Isoleability_
-# 2.4. Separação de preocupações
-# 2.5. Compreensabilidade
-# 2.6. Heterogeneidade
+## 2.1. Controlabilidade
+## 2.2. Observabilidade
+## 2.3. _Isoleability_
+## 2.4. Separação de preocupações
+## 2.5. Compreensabilidade
+## 2.6. Heterogeneidade
 # 3. Estatísticas de teste
 # 4. Identificação de um _bug_ e correção
 Devido à pequena escala do projeto, é difícil encontrar bugs, no entanto, foi identificado um "pequeno grande" bug, já que este pode causar que jogo ficar invisível, mas a sua correção foi bastante rápida.
