@@ -4,10 +4,21 @@
 
 ![Logo do Hextris](https://raw.githubusercontent.com/Spininador/hextris/esof_hextris/favicon.ico)
 
-# 1. Testablidade de Software e _Reviews_
-# 2. Estatísticas de teste
-# 3. Identificação de um _bug_ e correção
-Devido à pequena escala do projeto, é difícil encontrar bugs, no entanto, foi identificado um "pequeno grande" bug, já que este pode causar que jogo ficar invisível, mas a sua correção é bastante rápida.
+# 1. Introdução
+Como complemento aos relatórios anteriores sobre o projeto _Hextris_, foi-nos proposta a análise e consequente elaboração do relatório da vertente de testabilidade do projeto em questão. Em contraste às propostas anteriores, esta implica uma cuidadosa leitura do código-fonte, e dos testes nele presentes, para poder inferir sobre o grau de testabilidade do código, a cobertura de testes, etc.
+Para além disto, depois da análise de testes do software foi-nos sugerido também encontrar e corrigir um _bug_, e relatar este processo neste documento.
+
+
+# 2. Testablidade de Software
+# 2.1. Controlabilidade
+# 2.2. Observabilidade
+# 2.3. _Isoleability_
+# 2.4. Separação de preocupações
+# 2.5. Compreensabilidade
+# 2.6. Heterogeneidade
+# 3. Estatísticas de teste
+# 4. Identificação de um _bug_ e correção
+Devido à pequena escala do projeto, é difícil encontrar bugs, no entanto, foi identificado um "pequeno grande" bug, já que este pode causar que jogo ficar invisível, mas a sua correção foi bastante rápida.
 ## Descrição do _bug_
 Quando uma peça aterra no Hex central, é chamada a função shake(), que faz o Hex central, em conjunto com todas as peças anteriormente colocadas, abanarem numa certa direção.
 Este abalo tem uma magnitude extremamente baixa, quase não percetível.No entanto, algumas vezes, este seria tao forte que faria a Hex sair da área de jogo, e por vezes até do ecrã e nunca mais voltar.
