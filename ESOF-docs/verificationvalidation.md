@@ -67,7 +67,7 @@ Já que o _offset_ da peça central durante o abalo é calculado a partir de _ma
 
 ## 4.3. Correção do _bug_
 
-A correção do bug foi feita ao alterar a linha "_obj.magnitude /= 2 * this.dt;_" para "_obj.magnitude -= 2 * this.dt;_".Assim, mesmo que o valor de _this.dt_ seja inferior a 0,5 , não haverá problemas, pois a decrementação será constante.
+A correção do bug foi feita ao alterar a linha "_obj.magnitude /= 2 * this.dt;_" para "_obj.magnitude = (obj.magnitude / 2) * this.dt;_".Assim, _this.dt_ é multiplicado no numerador e não no denominador, não podendo assim o valor de magnitude aumentar.
 
 ## 4.4. Pull Request
 
