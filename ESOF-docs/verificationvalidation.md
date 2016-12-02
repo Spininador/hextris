@@ -39,6 +39,15 @@ A avaliação do fator de _isoleability_ envolve compreender quão facilmente é
 Num projeto deste tipo, quão melhor é este fator mais modular e manipulável é cada componente, independentemente do ambiente de teste aplicado. Assim, quer-se que cada componente seja uma entidade independente, pelo que quaisquer dependências de ferramentas de outros componentes diminui este fator. Já foi referido em 2.1., mas reiteramos neste ponto que há componentes que apresentam dependência de atributos/funções de outros componentes, e como tal, testar um implica introduzir no ambiente de teste o outro também.
 
 ## 2.4. Separação de preocupações
+Na área de ciência da computação, entende-se por "separação de preocupações" o protocolo de separarar as várias componentes de um programa em várias partes, de modo a que cada uma delas seja responsável por uma unção diferente, mais especializada. Por "preocupação" entende-se todos os detalhes do hardware em função do qual o código é otimizado.
+
+Quando o princípio da separação de preocupações é implementado de uma maneira pertinente, as várias secções individuais do programa podem ser re-utilizadas, assim como desenvolvidas e atualizadas de uma forma fácil e independente. Torna-se também mais eficiente a distribuição destas tarefas por vários elementos da equipa de implementação do projeto.
+
+Apesar de ser desenvolvido em JavaScript, uma linguagem que não está otimizada à progamação orientada por objetos (um paradigma de programação que é bastante compatível com o uso do conceito de separação de preocupações, o código e as suas funções foi repartido em várias secções especializadas, através de uma simulação da já mencionada programação orientada por objetos (nomeadamente, através da criação de objetos que funcionam como classes e se articulam entre si). 
+
+De acordo com a informação supracitada, podemos inferir que o programa em questão foi desenvolvido de forma a maximizar a sua futura gestão e flexibilidade, princípios intrinsicamente relacionados com o princípio da separação de preocupações, sendo portanto este princípio adequadamente implementado no âmbito do desenvolvimento do código do projeto.
+
+
 ## 2.5. Compreensabilidade
 ## 2.6. Heterogeneidade
 # 3. Estatísticas de teste
