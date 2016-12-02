@@ -49,7 +49,12 @@ De acordo com a informação supracitada, podemos inferir que o programa em ques
 
 
 ## 2.5. Compreensabilidade
+Este critério avalia a maneira como o código do programa está documentado e a sua compreensabilidade/elegibilidade em si mesmos. Deste modo, consideram-se boas práticas de compreensabilidade uma documentação explícita, informativa, simples e bem apresentada do código, assim como um código que seja intuitivamente perceptível e também bem apresentado.
+No projeto em questão, a documentação é bastante rudimentar. Os únicos comentários que o código apresenta são ocasionais esclarecimentos de certos raciocínios específicos ao programa. No entanto, o código é bem apresentado, organizado e as variáveis utilizadas possuem nomes pertinentes e adequados às suas respetivas funções. Conclui-se assim que apesar de a documentação ser bastante reduzida, devido à escala e natureza casual do projeto esta é adequada.
+
 ## 2.6. Heterogeneidade
+
+
 # 3. Estatísticas de teste
 
 # 4. Identificação de um _bug_ e correção
