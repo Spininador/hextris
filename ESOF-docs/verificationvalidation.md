@@ -56,6 +56,7 @@ No projeto em questão, a documentação é bastante rudimentar. Os únicos come
 Este critério aborda a maneira e facilidade de se efetuarem em paralelo diversos testes ao programa, através do uso de uma miríade de métodos, ferramentas e tecnologias. Como o Hextris é um projeto open-source, onde qualquer um pode contribuir através do Github, são essenciais testes que permitam garantir um bom funcionamento constante do programa, testes esses feitos a partir de tecnologias compatíveis com a linguagem utilizada para desenvolver o projeto (JavaScript).
 
 # 3. Estatísticas de teste
+As estatísticas de teste referem-se a uma interpretação e análise dos vários testes e consequente intercalação no código do projeto. Pela análise ao repositório Github do projeto e ao seu código podemos concluir que não se verifica a existência de quaisquer testes. Devido à pequena escala do projeto, seu funcionamento simples e relativo pequeno número de contribuidores (11, no total), a não existência de testes não é muito importante. No entanto, e de modo a compensar a falta de testes, consideramos que a documentação do código deveria ser mais desenvolvida e o código melhor comentado.
 
 # 4. Identificação de um _bug_ e correção
 
