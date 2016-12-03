@@ -53,7 +53,7 @@ Este critério avalia a maneira como o código do programa está documentado e a
 No projeto em questão, a documentação é bastante rudimentar. Os únicos comentários que o código apresenta são ocasionais esclarecimentos de certos raciocínios específicos ao programa. No entanto, o código é bem apresentado, organizado e as variáveis utilizadas possuem nomes pertinentes e adequados às suas respetivas funções. Conclui-se assim que apesar de a documentação ser bastante reduzida, devido à escala e natureza casual do projeto esta é adequada.
 
 ## 2.6. Heterogeneidade
-
+Este critério aborda a maneira e facilidade de se efetuarem em paralelo diversos testes ao programa, através do uso de uma miríade de métodos, ferramentas e tecnologias. Como o Hextris é um projeto open-source, onde qualquer um pode contribuir através do Github, são essenciais testes que permitam garantir um bom funcionamento constante do programa, testes esses feitos a partir de tecnologias compatíveis com a linguagem utilizada para desenvolver o projeto (JavaScript).
 
 # 3. Estatísticas de teste
 
