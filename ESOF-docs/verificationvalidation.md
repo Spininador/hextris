@@ -75,15 +75,11 @@ Este é o resumo do relatório gerado pelo  _complexity-report_:
 
 A complexidade média de cada função é apróximadamente 5, resultado considerado bastante bom. Sabendo que existem 123 funções neste projecto, no mínimo 615 testes teríam que ser escritos para se obter cobertura total. Existem algumas funções que consideramos serem boas candidatas a _refactoring_, por apresentarem um nível de complexidade elevado:
 
-<center>
-
 | Método        | Complexidade  | Módulo    |
 | :-----------: |:-------------:| :--------:|
 | render()      | 19            | render.js |
 | init()        | 18            | main.js   |
 | animLoop()    | 18            | main.js   |
-
-</center>
 
 # 4. Identificação de um _bug_ e correção
 
