@@ -62,6 +62,7 @@ As estatísticas de teste referem-se a uma interpretação e análise dos vário
 Recorrendo ao pacote _complexity-report_ do _Node.js_ como ferramenta de análise estática, foi possível obter várias métricas do código deste projecto, de entre as quais a *complexidade ciclomática* (ou *de _McCabe_*) - medição de caminhos de execução independentes dentro do código. Esta métrica constitui um bom indicador da complexidade de cada função - quanto maior for o valor de complexidade, maior é a probabilidade da existência de _bugs_. Como regra geral, um _developer_ tenta sempre programar métodos que não excedam um valor padrão de complexidade (usualmente 5 ou 10). Para além disso, esta métrica também permite antecipar o número minimo de testes necessários para se obter uma cobertura total do código - por exemplo - um método com um valor de complexidade 5 vai tem 5 ramificações de execução possíveis, e portanto requere, no mínimo, 5 teste (1 teste por ramificação) para se testar a integridade da sua cobertura.
 
 >
+'
 # Complexity report, 2016-12-4
 * Mean per-function logical LOC: 15.331397196559783
 * Mean per-function parameter count: 1.2799371197754466
@@ -71,7 +72,7 @@ Recorrendo ao pacote _complexity-report_ do _Node.js_ como ferramenta de anális
 * First-order density: 0%
 * Change cost: 7.142857142857142%
 * Core size: 0%
-<
+'
 
 # 4. Identificação de um _bug_ e correção
 
