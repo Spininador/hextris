@@ -59,7 +59,7 @@ Este critério aborda a maneira e facilidade de se efetuarem em paralelo diverso
 As estatísticas de teste referem-se a uma interpretação e análise dos vários testes e consequente intercalação no código do projeto. Pela análise ao repositório Github do projeto e ao seu código podemos concluir que não se verifica a existência de quaisquer testes. Devido à pequena escala do projeto, seu funcionamento simples e relativo pequeno número de contribuidores (11, no total), a não existência de testes não é muito importante.
 
 ## 3.1 Métricas de _software_
-Recorrendo ao pacote _complexity-report_ do _Node.js_ como ferramenta de análise estática, foi possível obter várias métricas do código deste projecto, de entre as quais a *complexidade ciclomática* (ou *de _McCabe_*) - medição de caminhos de execução independentes dentro do código. Esta métrica constitui um bom indicador da complexidade de cada função - quanto maior for o valor de complexidade, maior é a probabilidade da existência de _bugs_. Como regra geral, um _developer_ tenta sempre programar métodos que não excedam um valor padrão de complexidade (usualmente 5 ou 10). Para além disso, esta métrica também permite antecipar o número minimo de testes necessários para se obter uma cobertura total do código - por exemplo - um método com um valor de complexidade 5 vai tem 5 ramificações de execução possíveis, e portanto requere, no mínimo, 5 testes (1 teste por ramificação) para se testar a integridade da sua cobertura.
+Recorrendo ao pacote _complexity-report_ do _Node.js_ como ferramenta de análise estática, foi possível obter várias métricas do código deste projecto, de entre as quais a *complexidade ciclomática* (ou *de _McCabe_*) - medição dos caminhos de execução independentes dentro do código. Esta métrica constitui um bom indicador da complexidade de cada função. Quanto maior for o valor de complexidade, maior é a probabilidade da existência de _bugs_. Como regra geral, um _developer_ tenta sempre programar métodos que não excedam um valor padrão de complexidade (usualmente 5 ou 10). Para além disso, esta métrica também permite antecipar o número mínimo de testes necessários para se obter uma cobertura total do código - por exemplo - um método com um valor de complexidade 5 tem 5 ramificações de execução possíveis, e portanto são necessários pelo menos 5 testes (1 teste por ramificação) para se testar a integridade da sua cobertura.
 
 Este é o resumo do relatório gerado pelo  _complexity-report_:
 >
@@ -73,7 +73,7 @@ Este é o resumo do relatório gerado pelo  _complexity-report_:
 * Change cost: 7.142857142857142%
 * Core size: 0%
 
-A complexidade média de cada função é apróximadamente 5, resultado considerado bastante bom. Sabendo que existem 123 funções neste projecto, no mínimo 615 testes teríam que ser escritos para se obter cobertura total. Existem algumas funções que consideramos serem boas candidatas a _refactoring_, por apresentarem um nível de complexidade elevado:
+A complexidade média de cada função é apróximadamente 5, resultado considerado bastante bom. Sabendo que existem 123 funções neste projecto, no mínimo 615 testes teríam que ser escritos para se obter cobertura total. Existem ainda algumas funções que consideramos serem boas candidatas a _refactoring_, por apresentarem um nível de complexidade elevado:
 
 | Método        | Complexidade  | Módulo    |
 | :-----------: |:-------------:| :--------:|
