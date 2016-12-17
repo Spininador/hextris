@@ -49,11 +49,48 @@ Este principio é um pouco mais complexo. Avalia a dependência de módulos do p
 **Resultado**: Não aprovado.
 
 Como era de esperar, módulos como _main.js_ dependem de muitos outros módulos para serem executados.
+
 #### 1.6. _Couple Architecture Components Loosely_
+
+Este princípio analisa quantos componentes servem apenas de "interface" entre outros componentes. Isto tem como objetivo manter os componentes não dependentes entre si e que se comportem melhor quando isolados. De entre diversas maneiras de minimizar isto, temos padrões de desenho, por exemplo.
+
+**Resultado**: Aprovado.
+
+Como já tínhamos visto quando elaborámos o diagrama de componentes, não se verifica a presença de componentes "interface" e como tal, o princípio foi aprovado.
+
 #### 1.7. _Keep Architecture Components Balanced_
+
+Este princípio tem a ver com a organização do código externamente. Pretende-se que sejam agrupados em módulos de peso mais ou menos equilibrado, ou seja, com tamanho mais ou menos igual, de modo a ser mais fácil localizar (e gerir) código.
+
+**Resultado**: Aprovado.
+
+No projeto em questão, como temos apenas dois componentes, este princípio é um pouco irrelevante. Contudo, obteve uma uniformidade de 0.44, para dois componentes, ou seja, há bom equilíbrio dos módulos de código.
+
 #### 1.8. _Keep Your Codebase Small_
+
+Este princípio avalia a dimensão geral do código. Projetos com dimensão mais reduzida precisam de menor manutenção e, se necessário, menos mudanças. Para tal, deve-se recorrer também ao uso de bibliotecas e implementações externas, em contraste com soluções "caseiras".
+
+**Resultado**: Aprovado.
+
+Como era de esperar para a dimensão do projeto (um jogo simples em JavaScript), o projeto passa neste princípio (2 man-months/2 man-years). 
+
 #### 1.9. _Automate Tests_
+
+Este princípio avalia a qualidade e automatização dos testes. Projetos com melhores testes são mais previsíveis e seguros.
+
+**Resultado**: Não Aprovado.
+
+O projeto em questão foi elaborado em JavaScript e a ferramenta sugerida apenas avalia testes em ambiente de implementação Java ou C#.
+
+No entanto, como não seria aprovado (0 linhas de teste / 1906 linhas de produção). Já referimos este tópico no relatório relativo a testes. Não foram implementados testes e, como tal, todo o funcionamento é testado apenas pela execução do software.
+
 #### 1.10. _Write Clean Code_
+
+Este princípio tem a ver com a legibilidade do código. Pretende-se a eliminação de blocos (de código) comentados, comentário inúteis, constantes mágicas, etc. Isto torna o código desorganizado e ilegível, o que por sua vez é frustrante para quem possa vir a analisar o código, seja para que propósito.
+
+**Resultado**: Aprovado.
+
+Excluindo um ou outro comentário inútil, o projeto está bem legível (dentro deste parâmetro). Como tal, para nós foi simples analisar o projeto e implementar uma _feature_.
 
 <!-- Discuss Software Maintainability using the SIG metrics (plus add the badge to your .md file). Students should contact the recitations professor in order to be added to the ESOF organization to be able to automatically compute the metrics of interest using the service https://bettercodehub.com/. See the pdf with an example of a report of the interesting metrics and a description of what they represent.  -->
 ## 2. Processo evolutivo
