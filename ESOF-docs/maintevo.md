@@ -21,14 +21,34 @@ No entanto, percebe-se o recurso a algumas funções desta dimensão. Torna-se d
 Enquanto que o princípio anterior avaliava a complexidade de blocos de código apenas pela sua dimensão, este avalia cada bloco pela sua complexidade de McCabe (já referida no relatório anterior). Esta complexidade aumenta sempre que se introduzem ramos ao progresso da função, ie,  quando se introduz um bloco _if-else_, um ciclo _for_, etc...
 Blocos com menor complexidade de McCabe são mais facilmente testáveis, compreensíveis, e modificáveis.
 
-**Resultado:**: Não aprovado.
+**Resultado**: Não aprovado.
 
 Este resultado pode ser contestado. O projeto inclui JQuery, uma biblioteca para JavaScript **não elaborada** pelos developers do Hextris, e portanto, na nossa opinião, deve ser excluída da análise de resultados.
 Como tal, o projeto apresenta funções com McCabe menores ou iguais a 10, o que não é ideal, mas não é crítico.
 
 #### 1.3. _Write Code Once_
+
+Neste princípio é averiguado se há código duplicado, ou seja, blocos idênticos de código, repetidos mais que uma vez. A duplicação é, como o nome indica, redundante, e torna o código redundante também. Para modificar o código com blocos duplicados é necessário proceder à alteração de cada um dos blocos, o que não é ideal e torna a leitura e o teste do software difícil.
+
+**Resultado**: Aprovado.
+
+Excluindo blocos pequenos demais para serem modularizados, o projeto não tem grandes blocos de código duplicado, e portanto passa neste princípio.
+
 #### 1.4. _Keep Unit Interfaces Small_
+
+Avalia o software de acordo com número de parâmetros em cada função. Funções com mais parâmetros são menos simples e mais difíceis de testar.
+
+**Resultado**: Não aprovado.
+
+Excluindo JQuery, o projeto apresenta apenas uma função com número de parâmetros crítico (7!). No entanto, para uma miríade de outras funções com bastantes parâmetros os developers traduzem alguns como "opcionais", o que não é uma boa prática. Para corrigir isto, agruparíamos alguns dos parâmetros em objetos.
+
 #### 1.5. _Separate Concerns in Modules_
+
+Este principio é um pouco mais complexo. Avalia a dependência de módulos do projeto, ou seja, quantas chamadas de funções de blocos diferentes são efetuadas em cada um dos blocos. Blocos com muitas chamadas a funções de outros módulos são mais dependentes deles, e como tal, mais difíceis de alterar. O objetivo é ter cada módulo o mais independente possível.
+
+**Resultado**: Não aprovado.
+
+Como era de esperar, módulos como _main.js_ dependem de muitos outros módulos para serem executados.
 #### 1.6. _Couple Architecture Components Loosely_
 #### 1.7. _Keep Architecture Components Balanced_
 #### 1.8. _Keep Your Codebase Small_
