@@ -94,10 +94,17 @@ Excluindo um ou outro comentário inútil, o projeto está bem legível (dentro 
 
 <!-- Discuss Software Maintainability using the SIG metrics (plus add the badge to your .md file). Students should contact the recitations professor in order to be added to the ESOF organization to be able to automatically compute the metrics of interest using the service https://bettercodehub.com/. See the pdf with an example of a report of the interesting metrics and a description of what they represent.  -->
 ## 2. Processo evolutivo
-
 <!-- Report evolution process (change impact analysis and implementation)
-Briefly describe how the feature you decided to evolve was identified; why you decide to evolve that particular feature? How did you locate the parts in the source code that needed to be modified; etc.   -->
-Pela análise a vários outros jogos do estilo do Hextris, nos quais o objetivo é, geralmente, obter uma pontuação elevada e manter um jogo durante o maior tempo possível, concluímos que muitos deles possuem um mecanismo análogo ao que decidimos implementar, e inferimos que esse mecanismos de "combo mode" seria não só fácilmente implementado na lógica do Hextris, como traria uma componente estratégica adicional ao jogo, tornando-o mais dinâmico, fast-paced e possivelmente mais cativante a maiores audiências.
+Briefly describe how the feature you decided to evolve was identified; why you decide to evolve that particular feature? How did you locate the parts in the source code that needed to be modified; etc.  
+
+Pela análise a vários outros jogos do estilo do Hextris, nos quais o objetivo é, geralmente, obter uma pontuação elevada e manter um jogo durante o maior tempo possível, concluímos que muitos deles possuem um mecanismo análogo ao que decidimos implementar, e inferimos que esse mecanismos de "combo mode" seria não só fácilmente implementado na lógica do Hextris, como traria uma componente estratégica adicional ao jogo, tornando-o mais dinâmico, fast-paced e possivelmente mais cativante a maiores audiências.-->
+
+Decidimos implementar uma _feature_ ao nível da jogabilidade - o modo *adrenalina*. Este modo consiste num estado de jogo atingido com um _combo_ de 9 pontuações. Durante 8 segundos, os seguintes efeitos são aplicados:
+* A frequência da geração de peças é duplicada;
+* A côr das peças geradas é sempre a mesma;
+* A pontuação obtida pela destruição de peças é duplicada.
+
+Estas medidas permitem dinamizar mais o jogo, adicionando uma componente estratégica adicional. O jogador procurará ativamente fazer combos para atingir o modo adrenalina. Isto funcionará como um _"fix"_ ao sistema de _combos_ implementado originalmente, visto que os _combos_ no estado atual do _hextris_ têm pouco impacto na jogabilidade - apenas aplicam um multiplicador à pontuação obtida, não tendo nenhum efeito externo. Para além disso, também servirá para acelerar a fase trivial e lenta no início do jogo, visto que a velocidade da geração de peças aumenta com o _score_.
 
 ## 3. Link para pull request
 
