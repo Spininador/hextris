@@ -8,7 +8,7 @@
 Tal como sugerido, procedemos à análise do código do software que escolhemos, agora no contexto da sua manutenção. Para tal, acedemos à ferramenta _Better Code Hub_, que analisa o código segundo dez princípios, que de descreveremos de seguida.
 
 #### 1.1. _Write Short Units of Code_
-Avalia o tamanho de cada bloco de código. Blocos mais pequenos são mais fáceis de perceber, reutilizar, e testar, e portanto, são uma melhor prática de escrita de código.
+Avalia o tamanho de cada bloco de código. Blocos mais pequenos são mais fáceis de perceber, reutilizar e testar, sendo portanto,  uma melhor prática de escrita de código.
 
 **Resultado**: Não aprovado.
 
@@ -97,6 +97,7 @@ Excluindo um ou outro comentário inútil, o projeto está bem legível (dentro 
 
 <!-- Report evolution process (change impact analysis and implementation)
 Briefly describe how the feature you decided to evolve was identified; why you decide to evolve that particular feature? How did you locate the parts in the source code that needed to be modified; etc.   -->
+Pela análise a vários outros jogos do estilo do Hextris, nos quais o objetivo é, geralmente, obter uma pontuação elevada e manter um jogo durante o maior tempo possível, concluímos que muitos deles possuem um mecanismo análogo ao que decidimos implementar, e inferimos que esse mecanismos de "combo mode" seria não só fácilmente implementado na lógica do Hextris, como traria uma componente estratégica adicional ao jogo, tornando-o mais dinâmico, fast-paced e possivelmente mais cativante a maiores audiências.
 
 ## 3. Link para pull request
 
