@@ -101,7 +101,7 @@ Pela análise a vários outros jogos do estilo do Hextris, nos quais o objetivo 
 
 ## 3. Link para pull request
 
-O link para o pull request é https://github.com/Hextris/hextris/pull/173 , onde foi tanto implementada tanto a nova feature.
+https://github.com/Hextris/hextris/pull/173
 ### Relatório elaborado por:
 * [Gonçalo Ribeiro](https://github.com/gribeirofeup),  goncalo.ribeiro@fe.up.pt - 25%
 * [Nuno Corte-Real](https://github.com/nunocr), 	up201405158@fe.up.pt - 25%
