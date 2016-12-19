@@ -104,6 +104,10 @@ Decidimos implementar uma _feature_ ao nível da jogabilidade - o modo *adrenali
 * A côr das peças geradas é sempre a mesma;
 * A velocidade das peças é duplicada
 
+![Diagrama de Uso do Menu Principal](https://raw.githubusercontent.com/Spininador/hextris/esof_hextris/ESOF-docs/resources/exemplo.PNG)
+
+Como se pode observar na imagem, a area de jogo fica vermelha durante o modo de adrenalina, e apenas caem peças de uma cor, neste caso verde, durante 8s.
+
 Estas medidas permitem dinamizar mais o jogo, adicionando uma componente estratégica adicional. O jogador procurará ativamente fazer combos para atingir o modo adrenalina. Isto funcionará como um _"fix"_ ao sistema de _combos_ implementado originalmente, visto que os _combos_ no estado atual do _hextris_ têm pouco impacto na jogabilidade - apenas aplicam um multiplicador à pontuação obtida, não tendo nenhum efeito externo. Para além disso, também servirá para acelerar a fase trivial e lenta no início do jogo, visto que a velocidade da geração de peças aumenta com o _score_.
 
 Devido às pequenas proporções do projeto, foi fácil identificar as partes do código que deveriam ser modificadas.No entanto, foi um processo um pouco trabalhoso, pois existem muitas porções repetidas de código, e, por isso, foi preciso aplicar a mesma solução em várias zonas.
